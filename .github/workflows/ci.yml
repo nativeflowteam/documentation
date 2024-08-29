@@ -1,0 +1,27 @@
+name: "CI"
+on: [pull_request, issues]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/labeler@v3
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml
+      - name: Mark stale issues and PRs
+        uses: actions/stale@v3
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          stale-issue-message: 'This issue has been automatically marked as stale due to inactivity for more than 30 days.'
+          stale-pr-message: 'This pull request has been automatically marked as stale due to inactivity for more than 30 days.'
+          days-before-stale: 30
+          days-before-close: false
+          stale-issue-label: 'stale'
+          stale-pr-label: 'stale'

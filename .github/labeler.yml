@@ -1,0 +1,8 @@
+"Blog":
+  - "blog/**/*"
+
+"Website":
+  - "src/**/*"
+
+"Docs":
+  - "docs/**/*"
