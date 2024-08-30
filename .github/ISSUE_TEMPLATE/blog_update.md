@@ -1,8 +1,8 @@
 ---
-name: 💻 Website Features
-about: Have an idea to improve our documentation website? Suggest new features or enhancements here!
-title: "Website: "
-labels: "Website, Needs Triage"
+name: � Blog Update
+about: Have an update for our blog? Suggest your changes here!
+title: "Blog: "
+labels: "Blog, Needs Triage"
 assignees: ""
 ---
 
@@ -12,14 +12,14 @@ assignees: ""
 - [ ] I have thoroughly read and understand the [Contributing Guide](https://github.com/nativeflowteam/documentation/blob/main/CONTRIBUTING.md)
 - [ ] Would you like to work on this issue?
 
-### Describe the feature or enhancement
-<!-- Provide a clear and concise description of the feature or enhancement you are suggesting -->
+### Describe the blog update
+<!-- Provide a clear and concise description of the blog update you are suggesting -->
 
-### Why is this needed?
-<!-- Explain why this feature or enhancement would be useful for the documentation website -->
+### Why is this update needed?
+<!-- Explain why this update or new post would be beneficial for the blog -->
 
 ### Additional context
-<!-- Add any other context or screenshots about the feature request here -->
+<!-- Add any other context or screenshots about the blog update here -->
 
 ### (Optional) Discord username
 <!-- server link -->

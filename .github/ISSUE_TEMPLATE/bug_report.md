@@ -2,7 +2,7 @@
 name: 🐛 Bug
 about: Spotted a typo or a broken link? Help us keep our docs updated by reporting those bugs!
 title: "Bug: "
-labels: "Bug"
+labels: "Bug, Needs Triage"
 assignees: ""
 ---
 
