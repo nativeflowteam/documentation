@@ -9,19 +9,20 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "NativeFlow",
-  tagline: "Dinosaurs are cool",
+  tagline: "Zero-Deps approach",
   favicon: "img/favicon.svg",
 
   // Set the production url of your site here
   url: "https://nativeflowcss.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/documentation",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "nativeflowteam", // Usually your GitHub org/user name.
-  projectName: "nativeflowcss", // Usually your repo name.
+  projectName: "documentation", // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
