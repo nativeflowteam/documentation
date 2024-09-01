@@ -1,6 +1,6 @@
 {
     "label": "Flexbox",
-    "position": 4,
+    "position": 5,
     "link": {
       "type": "generated-index",
       "description": "Overview of common layout properties such as padding and margin.",
