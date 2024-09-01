@@ -1,0 +1,10 @@
+{
+    "label": "Main Topic",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "Does really nothing, but templates are super useful!",
+      "slug": "/main-topic"
+    }
+  }
+  
