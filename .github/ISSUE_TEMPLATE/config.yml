@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: 📦 NPM Package Repo
-    url: https://github.com/nativeflowteam/nativeflowcss
-    about: This repository is for the documentation website. For code related to the library, please visit the nativeflowcss repository.
-  - name: 📟 Join us on Discord 
-    url: https://discord.gg/your-discord-invite-link
-    about: Ask questions and get help from the community on our Discord server.
