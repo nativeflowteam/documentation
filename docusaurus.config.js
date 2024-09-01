@@ -13,16 +13,17 @@ const config = {
   favicon: "img/favicon.svg",
 
   // Set the production url of your site here
-  url: "https://nativeflowcss.com",
+  url: "",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/documentation",
+  baseUrl: "/documentation/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "nativeflowteam", // Usually your GitHub org/user name.
   projectName: "documentation", // Usually your repo name.
-  trailingSlash: false,
+  deploymentBranch: "gh-pages", // The branch where GitHub Pages will deploy
+  trailingSlash: false, // Set to false to avoid trailing slashes in URLs
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
