@@ -1,0 +1,10 @@
+{
+    "label": "Border",
+    "position": 5,
+    "link": {
+      "type": "generated-index",
+      "description": "NativeFlow classes for border properties.",
+      "slug": "/border"
+    }
+  }
+  

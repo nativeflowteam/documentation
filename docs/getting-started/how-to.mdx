@@ -1,0 +1,57 @@
+---
+id: how-to
+title: How To
+description: Guide on using classes in your project
+slug: /how-to
+sidebar_position: 3
+---
+
+Learn how to effectively use utility classes in your React Native project.
+
+## Example
+
+An easy Goal Tracker App utilizing `nativeflowcss` classes
+
+```jsx title="App.jsx"
+import { useState } from 'react'
+import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import { p, m, flex, border } from 'nativeflowcss'
+
+export default function App() {
+  const [currentGoalInput, setCurrentGoalInput] = useState('')
+  
+  function handleGoalInput(input) {
+    setCurrentGoalInput(input)
+  }
+
+  function handleGoalAdd () {
+    console.log(currentGoalInput)
+  }
+
+  return (
+    <View style={[p.t(56), p.x(32), flex.f(1)]}>
+      <View
+        style={[
+          flex.row,
+          flex.justify("around"),
+          flex.gap(12),
+          flex.items("center"),
+          flex.f(1),
+        ]}
+      >
+        <TextInput
+          placeholder="Your div centering goal!"
+          keyboardType="alphanumeric"
+          style={[border.width(), border.color("#cccccc"), flex.f(), p.p(6)]}
+          onChangeText={handleGoalInput}
+        />
+        <Button title="Add Goal" onPress={handleGoalAdd} />
+      </View>
+      <View style={[flex.f(5)]}>
+        <Text>A list of Goals...</Text>
+      </View>
+    </View>
+  );
+}
+
+```
