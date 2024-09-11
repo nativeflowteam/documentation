@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "NativeFlow",
-  tagline: "Zero-Deps approach",
+  tagline: "Utility style-objects for React Native, to seamlessly switch from Tailwind on web to NF on Native, no extra setup required, import and use!",
   favicon: "img/favicon.svg",
 
   // Set the production url of your site here
@@ -76,7 +76,7 @@ const config = {
       navbar: {
         title: "NativeFlow",
         logo: {
-          alt: "My Site Logo",
+          alt: "logo",
           src: "img/favicon.svg",
         },
         items: [
@@ -86,7 +86,7 @@ const config = {
             position: "left",
             label: "Docs",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/nativeflowteam/nativeflowcss",
             label: "GitHub",
@@ -98,10 +98,10 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Tutorials",
             items: [
               {
-                label: "Tutorial",
+                label: "Docs",
                 to: "/docs/intro",
               },
             ],
@@ -114,22 +114,22 @@ const config = {
                 href: "https://www.npmjs.com/package/nativeflowcss",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "X",
+                href: "https://x.com/jayowiee",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.gg/KcKTtuqV3Y",
               },
             ],
           },
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
               {
                 label: "GitHub",
                 href: "https://github.com/nativeflowteam/nativeflowcss",
