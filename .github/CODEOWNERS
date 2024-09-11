@@ -1,8 +1,1 @@
-<!-- 
-Specify the code owners for specific files or directories
-Format: path/to/file @github-username 
--->
-
-# Require reviews from the team `@nativeflowteam/docs` for any changes in the repository
-
-/ @nativeflowteam/docs
+* @nativeflowteam/docs
