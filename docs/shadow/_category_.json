@@ -1,0 +1,10 @@
+{
+    "label": "Shadow",
+    "position": 11,
+    "link": {
+      "type": "generated-index",
+      "description": "Create depth with shadow effects for elements.",
+      "slug":"/shadow"
+    }
+  }
+  

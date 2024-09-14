@@ -1,9 +1,9 @@
 {
     "label": "Layout",
-    "position": 4,
+    "position": 5,
     "link": {
       "type": "generated-index",
-      "description": "Concise description of common layout properties like padding, margin, etc.",
+      "description": "Manage viewport structure and positioning of eleemtns in your <View>.",
       "slug":"/layout"
     }
   }

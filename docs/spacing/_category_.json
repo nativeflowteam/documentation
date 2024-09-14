@@ -1,0 +1,10 @@
+{
+    "label": "Spacing",
+    "position": 8,
+    "link": {
+      "type": "generated-index",
+      "description": "Concise description of spacing properties like padding & margin.",
+      "slug":"/spacing"
+    }
+  }
+  
