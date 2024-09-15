@@ -31,3 +31,11 @@
   --ifm-color-primary-lightest: #e2eafc;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.scrollable-box {
+  overflow: auto;
+  max-height: 300px;
+  width: 100%;
+  border-bottom: 4px solid #606770;
+  padding-bottom: 16px;
+}

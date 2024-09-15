@@ -6,14 +6,70 @@ slug: /border-width
 sidebar_position: 2
 ---
 
-Classes for setting Native border widths using NF
+Control the thickness of element borders.
+
+## Import
+
+```js title="src/screens/SplashScreen.js"
+import { bdr } from "nativeflowcss";
+```
 
 ## Properties
 
-| Classes           | Native Props                     |
-|-------------------|----------------------------------|
-| `border.w_(n)`     | `borderWidth: n,`                |
-| `border.t_w_(n)`     | `borderTopWidth: n,`             |
-| `border.b_w_(n)`     | `borderBottomWidth: n,`          |
-| `border.l_w_(n)`     | `borderLeftWidth: n,`            |
-| `border.r_w_(n)`     | `borderRightWidth: n,`           |
+The following classes are predefined for border widths from 1 to 5:
+
+<div className="scrollable-box">
+
+| Classes     | Native Props               |
+| ----------- | -------------------------- |
+| `bdr.w_1`   | `{ borderWidth: 1 }`       |
+| `bdr.w_2`   | `{ borderWidth: 2 }`       |
+| `bdr.w_3`   | `{ borderWidth: 3 }`       |
+| `bdr.w_4`   | `{ borderWidth: 4 }`       |
+| `bdr.w_5`   | `{ borderWidth: 5 }`       |
+| `bdr.b_w_1` | `{ borderBottomWidth: 1 }` |
+| `bdr.b_w_2` | `{ borderBottomWidth: 2 }` |
+| `bdr.b_w_3` | `{ borderBottomWidth: 3 }` |
+| `bdr.b_w_4` | `{ borderBottomWidth: 4 }` |
+| `bdr.b_w_5` | `{ borderBottomWidth: 5 }` |
+| `bdr.l_w_1` | `{ borderLeftWidth: 1 }`   |
+| `bdr.l_w_2` | `{ borderLeftWidth: 2 }`   |
+| `bdr.l_w_3` | `{ borderLeftWidth: 3 }`   |
+| `bdr.l_w_4` | `{ borderLeftWidth: 4 }`   |
+| `bdr.l_w_5` | `{ borderLeftWidth: 5 }`   |
+| `bdr.r_w_1` | `{ borderRightWidth: 1 }`  |
+| `bdr.r_w_2` | `{ borderRightWidth: 2 }`  |
+| `bdr.r_w_3` | `{ borderRightWidth: 3 }`  |
+| `bdr.r_w_4` | `{ borderRightWidth: 4 }`  |
+| `bdr.r_w_5` | `{ borderRightWidth: 5 }`  |
+| `bdr.t_w_1` | `{ borderTopWidth: 1 }`    |
+| `bdr.t_w_2` | `{ borderTopWidth: 2 }`    |
+| `bdr.t_w_3` | `{ borderTopWidth: 3 }`    |
+| `bdr.t_w_4` | `{ borderTopWidth: 4 }`    |
+| `bdr.t_w_5` | `{ borderTopWidth: 5 }`    |
+| `bdr.s_w_1` | `{ borderStartWidth: 1 }`  |
+| `bdr.s_w_2` | `{ borderStartWidth: 2 }`  |
+| `bdr.s_w_3` | `{ borderStartWidth: 3 }`  |
+| `bdr.s_w_4` | `{ borderStartWidth: 4 }`  |
+| `bdr.s_w_5` | `{ borderStartWidth: 5 }`  |
+| `bdr.e_w_1` | `{ borderEndWidth: 1 }`    |
+| `bdr.e_w_2` | `{ borderEndWidth: 2 }`    |
+| `bdr.e_w_3` | `{ borderEndWidth: 3 }`    |
+| `bdr.e_w_4` | `{ borderEndWidth: 4 }`    |
+| `bdr.e_w_5` | `{ borderEndWidth: 5 }`    |
+
+</div>
+
+## Custom Border Widths
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Classes               | Native Props                         |
+| --------------------- | ------------------------------------ |
+| bdr.w_(customWidth)   | `{ borderWidth: customWidth }`       |
+| bdr.t_w_(customWidth) | `{ borderTopWidth: customWidth }`    |
+| bdr.r_w_(customWidth) | `{ borderRightWidth: customWidth }`  |
+| bdr.b_w_(customWidth) | `{ borderBottomWidth: customWidth }` |
+| bdr.l_w_(customWidth) | `{ borderLeftWidth: customWidth }`   |
+| bdr.s_w_(customWidth) | `{ borderStartWidth: customWidth }`  |
+| bdr.e_w_(customWidth) | `{ borderEndWidth: customWidth }`    |

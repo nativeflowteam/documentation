@@ -5,3 +5,189 @@ description: Set rounded corners with customizable radii.
 slug: /border-radius
 sidebar_position: 1
 ---
+
+Set rounded corners with customizable radii.
+
+## Import
+
+```js title="src/screens/SplashScreen.js"
+import { bdr } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+
+| Object              | Native Properties                                                           |
+| ------------------- | --------------------------------------------------------------------------- |
+| bdr.rounded_none    | `{ borderRadius: 0 }`                                                       |
+| bdr.rounded_sm      | `{ borderRadius: 2 }`                                                       |
+| bdr.rounded         | `{ borderRadius: 4 }`                                                       |
+| bdr.rounded_md      | `{ borderRadius: 6 }`                                                       |
+| bdr.rounded_lg      | `{ borderRadius: 8 }`                                                       |
+| bdr.rounded_xl      | `{ borderRadius: 12 }`                                                      |
+| bdr.rounded_2xl     | `{ borderRadius: 16 }`                                                      |
+| bdr.rounded_3xl     | `{ borderRadius: 24 }`                                                      |
+| bdr.rounded_ful`    | `{ borderRadius: 9999 }`                                                    |
+| bdr.rounded_s_none  | `{ borderStartStartRadius: 0` , <br /> `borderEndStartRadius: 0 }`          |
+| bdr.rounded_s_sm    | `{ borderStartStartRadius: 2` , <br /> `borderEndStartRadius: 2 }`          |
+| bdr.rounded_s       | `{ borderStartStartRadius: 4` , <br /> `borderEndStartRadius: 4 }`          |
+| bdr.rounded_s_md    | `{ borderStartStartRadius: 6` , <br /> `borderEndStartRadius: 6 }`          |
+| bdr.rounded_s_lg    | `{ borderStartStartRadius: 8` , <br /> `borderEndStartRadius: 8 }`          |
+| bdr.rounded_s_xl    | `{ borderStartStartRadius: 12` , <br /> `borderEndStartRadius: 12 }`        |
+| bdr.rounded_s_2xl   | `{ borderStartStartRadius: 16` , <br /> `borderEndStartRadius: 16 }`        |
+| bdr.rounded_s_3xl   | `{ borderStartStartRadius: 24` , <br /> `borderEndStartRadius: 24 }`        |
+| bdr.rounded_s_full  | `{ borderStartStartRadius: 9999` , <br /> `borderEndStartRadius: 9999 }`    |
+| bdr.rounded_e_none  | `{ borderStartEndRadius: 0` , <br /> `borderEndEndRadius: 0 }`              |
+| bdr.rounded_e_sm    | `{ borderStartEndRadius: 2` , <br /> `borderEndEndRadius: 2 }`              |
+| bdr.rounded_e       | `{ borderStartEndRadius: 4` , <br /> `borderEndEndRadius: 4 }`              |
+| bdr.rounded_e_md    | `{ borderStartEndRadius: 6` , <br /> `borderEndEndRadius: 6 }`              |
+| bdr.rounded_e_lg    | `{ borderStartEndRadius: 8` , <br /> `borderEndEndRadius: 8 }`              |
+| bdr.rounded_e_xl    | `{ borderStartEndRadius: 12` , <br /> `borderEndEndRadius: 12 }`            |
+| bdr.rounded_e_2xl   | `{ borderStartEndRadius: 16` , <br /> `borderEndEndRadius: 16 }`            |
+| bdr.rounded_e_3xl   | `{ borderStartEndRadius: 24` , <br /> `borderEndEndRadius: 24 }`            |
+| bdr.rounded_e_full  | `{ borderStartEndRadius: 9999` , <br /> `borderEndEndRadius: 9999 }`        |
+| bdr.rounded_t_none  | `{ borderTopLeftRadius: 0` , <br /> `borderTopRightRadius: 0 }`             |
+| bdr.rounded_t_sm    | `{ borderTopLeftRadius: 2` , <br /> `borderTopRightRadius: 2 }`             |
+| bdr.rounded_t       | `{ borderTopLeftRadius: 4` , <br /> `borderTopRightRadius: 4 }`             |
+| bdr.rounded_t_md    | `{ borderTopLeftRadius: 6` , <br /> `borderTopRightRadius: 6 }`             |
+| bdr.rounded_t_lg    | `{ borderTopLeftRadius: 8` , <br /> `borderTopRightRadius: 8 }`             |
+| bdr.rounded_t_xl    | `{ borderTopLeftRadius: 12` , <br /> `borderTopRightRadius: 12 }`           |
+| bdr.rounded_t_2xl   | `{ borderTopLeftRadius: 16` , <br /> `borderTopRightRadius: 16 }`           |
+| bdr.rounded_t_3xl   | `{ borderTopLeftRadius: 24` , <br /> `borderTopRightRadius: 24 }`           |
+| bdr.rounded_t_full  | `{ borderTopLeftRadius: 9999` , <br /> `borderTopRightRadius: 9999 }`       |
+| bdr.rounded_r_none  | `{ borderTopRightRadius: 0` , <br /> `borderBottomRightRadius: 0 }`         |
+| bdr.rounded_r_sm    | `{ borderTopRightRadius: 2` , <br /> `borderBottomRightRadius: 2 }`         |
+| bdr.rounded_r       | `{ borderTopRightRadius: 4` , <br /> `borderBottomRightRadius: 4 }`         |
+| bdr.rounded_r_md    | `{ borderTopRightRadius: 6` , <br /> `borderBottomRightRadius: 6 }`         |
+| bdr.rounded_r_lg    | `{ borderTopRightRadius: 8` , <br /> `borderBottomRightRadius: 8 }`         |
+| bdr.rounded_r_xl    | `{ borderTopRightRadius: 12` , <br /> `borderBottomRightRadius: 12 }`       |
+| bdr.rounded_r_2x    | `{ borderTopRightRadius: 16` , <br /> `borderBottomRightRadius: 16 }`       |
+| bdr.rounded_r_3xl   | `{ borderTopRightRadius: 24` , <br /> `borderBottomRightRadius: 24 }`       |
+| bdr.rounded_r_full  | `{ borderTopRightRadius: 9999` , <br /> `borderBottomRightRadius: 9999 }`   |
+| bdr.rounded_b_none  | `{ borderBottomRightRadius: 0` , <br /> `borderBottomLeftRadius: 0 }`       |
+| bdr.rounded_b_sm    | `{ borderBottomRightRadius: 2` , <br /> `borderBottomLeftRadius: 2 }`       |
+| bdr.rounded_b       | `{ borderBottomRightRadius: 4` , <br /> `borderBottomLeftRadius: 4 }`       |
+| bdr.rounded_b_md    | `{ borderBottomRightRadius: 6` , <br /> `borderBottomLeftRadius: 6 }`       |
+| bdr.rounded_b_lg    | `{ borderBottomRightRadius: 8` , <br /> `borderBottomLeftRadius: 8 }`       |
+| bdr.rounded_b_xl    | `{ borderBottomRightRadius: 12` , <br /> `borderBottomLeftRadius: 12 }`     |
+| bdr.rounded_b_2xl   | `{ borderBottomRightRadius: 16` , <br /> `borderBottomLeftRadius: 16 }`     |
+| bdr.rounded_b_3xl   | `{ borderBottomRightRadius: 24` , <br /> `borderBottomLeftRadius: 24 }`     |
+| bdr.rounded_b_full  | `{ borderBottomRightRadius: 9999` , <br /> `borderBottomLeftRadius: 9999 }` |
+| bdr.rounded_l_none  | `{ borderTopLeftRadius: 0` , <br /> `borderBottomLeftRadius: 0 }`           |
+| bdr.rounded_l_sm    | `{ borderTopLeftRadius: 2` , <br /> `borderBottomLeftRadius: 2 }`           |
+| bdr.rounded_l       | `{ borderTopLeftRadius: 4` , <br /> `borderBottomLeftRadius: 4 }`           |
+| bdr.rounded_l_md    | `{ borderTopLeftRadius: 6` , <br /> `borderBottomLeftRadius: 6 }`           |
+| bdr.rounded_l_lg    | `{ borderTopLeftRadius: 8` , <br /> `borderBottomLeftRadius: 8 }`           |
+| bdr.rounded_l_xl    | `{ borderTopLeftRadius: 12` , <br /> `borderBottomLeftRadius: 12 }`         |
+| bdr.rounded_l_2xl   | `{ borderTopLeftRadius: 16` , <br /> `borderBottomLeftRadius: 16 }`         |
+| bdr.rounded_l_3xl   | `{ borderTopLeftRadius: 24` , <br /> `borderBottomLeftRadius: 24 }`         |
+| bdr.rounded_l_full  | `{ borderTopLeftRadius: 9999` , <br /> `borderBottomLeftRadius: 9999 }`     |
+| bdr.rounded_ss_none | `{ borderStartStartRadius: 0 }`                                             |
+| bdr.rounded_ss_sm   | `{ borderStartStartRadius: 2 }`                                             |
+| bdr.rounded_ss      | `{ borderStartStartRadius: 4 }`                                             |
+| bdr.rounded_ss_md   | `{ borderStartStartRadius: 6 }`                                             |
+| bdr.rounded_ss_lg   | `{ borderStartStartRadius: 8 }`                                             |
+| bdr.rounded_ss_xl   | `{ borderStartStartRadius: 12 }`                                            |
+| bdr.rounded_ss_2xl  | `{ borderStartStartRadius: 16 }`                                            |
+| bdr.rounded_ss_3xl  | `{ borderStartStartRadius: 24 }`                                            |
+| bdr.rounded_ss_full | `{ borderStartStartRadius: 9999 }`                                          |
+| bdr.rounded_se_none | `{ borderStartEndRadius: 0 }`                                               |
+| bdr.rounded_se_sm   | `{ borderStartEndRadius: 2 }`                                               |
+| bdr.rounded_se      | `{ borderStartEndRadius: 4 }`                                               |
+| bdr.rounded_se_md   | `{ borderStartEndRadius: 6 }`                                               |
+| bdr.rounded_se_lg   | `{ borderStartEndRadius: 8 }`                                               |
+| bdr.rounded_se_xl   | `{ borderStartEndRadius: 12 }`                                              |
+| bdr.rounded_se_2xl  | `{ borderStartEndRadius: 16 }`                                              |
+| bdr.rounded_se_3xl  | `{ borderStartEndRadius: 24 }`                                              |
+| bdr.rounded_se_full | `{ borderStartEndRadius: 9999 }`                                            |
+| bdr.rounded_ee_none | `{ borderEndEndRadius: 0 }`                                                 |
+| bdr.rounded_ee_sm   | `{ borderEndEndRadius: 2 }`                                                 |
+| bdr.rounded_ee      | `{ borderEndEndRadius: 4 }`                                                 |
+| bdr.rounded_ee_md   | `{ borderEndEndRadius: 6 }`                                                 |
+| bdr.rounded_ee_lg   | `{ borderEndEndRadius: 8 }`                                                 |
+| bdr.rounded_ee_xl   | `{ borderEndEndRadius: 12 }`                                                |
+| bdr.rounded_ee_2xl  | `{ borderEndEndRadius: 16 }`                                                |
+| bdr.rounded_ee_3xl  | `{ borderEndEndRadius: 24 }`                                                |
+| bdr.rounded_ee_full | `{ borderEndEndRadius: 9999 }`                                              |
+| bdr.rounded_es_none | `{ borderEndStartRadius: 0 }`                                               |
+| bdr.rounded_es_sm   | `{ borderEndStartRadius: 2 }`                                               |
+| bdr.rounded_es      | `{ borderEndStartRadius: 4 }`                                               |
+| bdr.rounded_es_md   | `{ borderEndStartRadius: 6 }`                                               |
+| bdr.rounded_es_lg   | `{ borderEndStartRadius: 8 }`                                               |
+| bdr.rounded_es_xl   | `{ borderEndStartRadius: 12 }`                                              |
+| bdr.rounded_es_2xl  | `{ borderEndStartRadius: 16 }`                                              |
+| bdr.rounded_es_3xl  | `{ borderEndStartRadius: 24 }`                                              |
+| bdr.rounded_es_full | `{ borderEndStartRadius: 9999 }`                                            |
+| bdr.rounded_tl_none | `{ borderTopLeftRadius: 0 }`                                                |
+| bdr.rounded_tl_sm   | `{ borderTopLeftRadius: 2 }`                                                |
+| bdr.rounded_tl      | `{ borderTopLeftRadius: 4 }`                                                |
+| bdr.rounded_tl_md   | `{ borderTopLeftRadius: 6 }`                                                |
+| bdr.rounded_tl_lg   | `{ borderTopLeftRadius: 8 }`                                                |
+| bdr.rounded_tl_xl   | `{ borderTopLeftRadius: 12 }`                                               |
+| bdr.rounded_tl_2xl  | `{ borderTopLeftRadius: 16 }`                                               |
+| bdr.rounded_tl_3xl  | `{ borderTopLeftRadius: 24 }`                                               |
+| bdr.rounded_tl_full | `{ borderTopLeftRadius: 9999 }`                                             |
+| bdr.rounded_tr_none | `{ borderTopRightRadius: 0 }`                                               |
+| bdr.rounded_tr_sm   | `{ borderTopRightRadius: 2 }`                                               |
+| bdr.rounded_tr      | `{ borderTopRightRadius: 4 }`                                               |
+| bdr.rounded_tr_md   | `{ borderTopRightRadius: 6 }`                                               |
+| bdr.rounded_tr_lg   | `{ borderTopRightRadius: 8 }`                                               |
+| bdr.rounded_tr_xl   | `{ borderTopRightRadius: 12 }`                                              |
+| bdr.rounded_tr_2xl  | `{ borderTopRightRadius: 16 }`                                              |
+| bdr.rounded_tr_3xl  | `{ borderTopRightRadius: 24 }`                                              |
+| bdr.rounded_tr_full | `{ borderTopRightRadius: 9999 }`                                            |
+| bdr.rounded_br_none | `{ borderBottomRightRadius: 0 }`                                            |
+| bdr.rounded_br_sm   | `{ borderBottomRightRadius: 2 }`                                            |
+| bdr.rounded_br      | `{ borderBottomRightRadius: 4 }`                                            |
+| bdr.rounded_br_md   | `{ borderBottomRightRadius: 6 }`                                            |
+| bdr.rounded_br_lg   | `{ borderBottomRightRadius: 8 }`                                            |
+| bdr.rounded_br_xl   | `{ borderBottomRightRadius: 12 }`                                           |
+| bdr.rounded_br_2xl  | `{ borderBottomRightRadius: 16 }`                                           |
+| bdr.rounded_br_3xl  | `{ borderBottomRightRadius: 24 }`                                           |
+| bdr.rounded_br_full | `{ borderBottomRightRadius: 9999 }`                                         |
+| bdr.rounded_bl_none | `{ borderBottomLeftRadius: 0 }`                                             |
+| bdr.rounded_bl_sm   | `{ borderBottomLeftRadius: 2 }`                                             |
+| bdr.rounded_bl      | `{ borderBottomLeftRadius: 4 }`                                             |
+| bdr.rounded_bl_md   | `{ borderBottomLeftRadius: 6 }`                                             |
+| bdr.rounded_bl_lg   | `{ borderBottomLeftRadius: 8 }`                                             |
+| bdr.rounded_bl_xl   | `{ borderBottomLeftRadius: 12 }`                                            |
+| bdr.rounded_bl_2xl  | `{ borderBottomLeftRadius: 16 }`                                            |
+| bdr.rounded_bl_3xl  | `{ borderBottomLeftRadius: 24 }`                                            |
+| bdr.rounded_bl_full | `{ borderBottomLeftRadius: 9999 }`                                          |
+
+</div>
+
+## Custom Border Radii
+
+Custom properties are usually rendered using `_(customValue)`
+
+<div className="scrollable-box">
+
+| Object                        | Native Properties                                                                           |
+| ----------------------------- | ------------------------------------------------------------------------------------------- |
+| bdr.rounded_(customRadius)   | `{ borderRadius: customRadius }`                                                            |
+| bdr.rounded_s_(customRadius)  | `{ borderStartStartRadius: customRadius` , <br /> `borderEndStartRadius: customRadius }`    |
+| bdr.rounded_e_(customRadius)  | `{ borderStartEndRadius: customRadius` , <br /> `borderEndEndRadius: customRadius }`        |
+| bdr.rounded_t_(customRadius)  | `{ borderTopLeftRadius: customRadius` , <br /> `borderTopRightRadius: customRadius }`       |
+| bdr.rounded_r_(customRadius)  | `{ borderTopRightRadius: customRadius` , <br /> `borderBottomRightRadius: customRadius }`   |
+| bdr.rounded_b_(customRadius)  | `{ borderBottomRightRadius: customRadius` , <br /> `borderBottomLeftRadius: customRadius }` |
+| bdr.rounded_l_(customRadius)  | `{ borderTopLeftRadius: customRadius` , <br /> `borderBottomLeftRadius: customRadius }`     |
+| bdr.rounded_ss_(customRadius) | `{ borderStartStartRadius: customRadius }`                                                  |
+| bdr.rounded_se_(customRadius) | `{ borderStartEndRadius: customRadius }`                                                    |
+| bdr.rounded_ee_(customRadius) | `{ borderEndEndRadius: customRadius }`                                                      |
+| bdr.rounded_es_(customRadius) | `{ borderEndStartRadius: customRadius }`                                                    |
+| bdr.rounded_tl_(customRadius) | `{ borderTopLeftRadius: customRadius }`                                                     |
+| bdr.rounded_tr_(customRadius) | `{ borderTopRightRadius: customRadius }`                                                    |
+| bdr.rounded_br_(customRadius) | `{ borderBottomRightRadius: customRadius }`                                                 |
+| bdr.rounded_bl_(customRadius) | `{ borderBottomLeftRadius: customRadius }`                                                  |
+
+</ div>
+
+<br />
+
+:::tip
+
+If the rounded border is not visible, try applying `overflow: 'hidden'` as well.
+
+:::

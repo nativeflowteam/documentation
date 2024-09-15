@@ -5,3 +5,19 @@ description: Define border styles like solid, dashed, or dotted.
 slug: /border-style
 sidebar_position: 4
 ---
+
+Define border styles like solid, dashed, or dotted.
+
+## Import
+
+```js title="src/screens/SplashScreen.js"
+import { bdr } from "nativeflowcss";
+```
+
+## Properties
+
+| Classes      | Native Props                | Pattern Box                                                             |
+| ------------ | --------------------------- | ----------------------------------------------------------------------- |
+| `bdr.solid`  | `{ borderStyle: 'solid' }`  | <div style={{ margin: 'auto', width: '50px', height: '20px', border: '2px solid #A8A8A9' }}></div> |
+| `bdr.dotted` | `{ borderStyle: 'dotted' }` | <div style={{ margin: 'auto', width: '50px', height: '20px', border: '2px dotted #A8A8A9' }}></div> |
+| `bdr.dashed` | `{ borderStyle: 'dashed' }` | <div style={{ margin: 'auto', width: '50px', height: '20px', border: '2px dashed #A8A8A9' }}></div> |
