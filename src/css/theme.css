@@ -4,15 +4,18 @@
  * work well for content-centric websites.
  */
 
+@tailwind components;
+@tailwind utilities;
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #d1faf4;
-  --ifm-color-primary-dark: #4A6A73;
-  --ifm-color-primary-darker: #2C4A53;
-  --ifm-color-primary-darkest: #0B2A33;
-  --ifm-color-primary-light: #3F7A93;
-  --ifm-color-primary-lighter: #78A3B2;
-  --ifm-color-primary-lightest: #9AC1D1;
+  --ifm-color-primary: #2c4a53;
+  --ifm-color-primary-dark: #4a6a73;
+  --ifm-color-primary-darker: #2c4a53;
+  --ifm-color-primary-darkest: #0b2a33;
+  --ifm-color-primary-light: #3f7a93;
+  --ifm-color-primary-lighter: #78a3b2;
+  --ifm-color-primary-lightest: #9ac1d1;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -27,8 +30,4 @@
   --ifm-color-primary-lighter: #ccdbfd;
   --ifm-color-primary-lightest: #e2eafc;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-.hero-color {
-  color: '#3A5D9C'
 }
