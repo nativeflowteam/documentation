@@ -32,10 +32,24 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* For long tables which reduce UX for the overall page */
 .scrollable-box {
   overflow: auto;
   max-height: 300px;
   width: 100%;
   border-bottom: 4px solid #606770;
   padding-bottom: 16px;
+}
+
+/* For conversation-like boxes */
+.thought-box {
+  border: 2px solid #b6d5e8;
+  border-radius: 4px;
+  padding: 16px;
+  padding-bottom: 0px;
+  box-shadow: 6px 4px #b6d5e8;
+}
+[data-theme="dark"] .thought-box {
+  border: 2px solid #6798c0;
+  box-shadow: 6px 4px #6798c0;
 }

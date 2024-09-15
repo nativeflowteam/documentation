@@ -1,0 +1,42 @@
+---
+id: utility-first-fundamentals
+title: Utility-First Fundamentals
+description: How the syntax system works, what flaws the other approach has that NativeFlow fixes
+slug: /fundamentals
+sidebar_position: 1
+---
+
+import SnackPlayer from '@site/src/components/SnackPlayer';
+
+How the syntax system works, what flaws the other approach has that NativeFlow fixes
+
+## Why NativeFlow ?
+
+The regular way to write styles in a React Native project is primarily through stylesheet objects, 
+using properties a lot similar to the [CSS for Web](https://developer.mozilla.org/en-US/docs/Web/CSS) 
+but using the CSS-in-JS type of syntax.
+
+The CSS-in-JS type of properties are verbose and take a bit of workaround to get running up due to newer namespaces, etc.
+
+<SnackPlayer id="@mathdebate09/react-native-vanilla" platform="web" preview="true" theme="dark" />
+
+<br />
+
+<div className="thought-box">
+So while preserving the Native approach, we get up running with shorter syntax, with NativeFlow
+</div>
+
+<br />
+
+<SnackPlayer id="@mathdebate09/react-native-flow" platform="web" preview="true" theme="dark" />
+
+<br />
+
+**You can focus on the design, we'll make it quicker for you**
+
+## We use utility-objects, not classes, but why?
+
+- React Native was naturally meant to work around with stylesheet **objects** not classNames
+- We forcefully started injecting tailwind with the help of babel which worked fine, but breaks sometimes, more than often
+- The babel-injected approach also lacked animations and platform specific properties like `elevation` or `borderCurve`
+- And why should we hassle if we can stay close to the environment

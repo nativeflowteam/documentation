@@ -5,3 +5,32 @@ description: Reusing a stylesheet made using NativeFlow utility objects
 slug: /destructured-approach
 sidebar_position: 3
 ---
+
+Reusing a stylesheet made using NativeFlow utility objects
+
+<div className="thought-box">
+Jay I don't wanna make my style property cluttered and use the good'ol `StyleSheet.create()`, is there any way to implement utility-objects in the stylesheet?
+</div>
+
+## Why Destructure
+
+- More consistency in design systems
+- Extended reusability (like a lot, really lot)
+- Aren't these two points good enough make it smoother to use NativeFlow in big codebases?
+
+## How-to Destructure
+
+Javascript provides object destructring through the spread operator (`...someObject`), we can utilize it to implement utility objects in the `StyleSheet.create()` Native function
+
+```js title="src/screens/LoginPage.js"
+import { StyleSheet } from "react-native";
+import { p, m, align, justify } from "nativeflowcss";
+
+// Creating a custom container
+const container = StyleSheet.create({
+  ...p.x_12,
+  ...m.y_6,
+  ...align.items_center,
+  ...justify.center,
+});
+```
