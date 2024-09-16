@@ -6,18 +6,18 @@ slug: /border-color
 sidebar_position: 3
 ---
 
+import colorList from "@site/src/utils/colorList";
+import React from "react";
+
 Apply colors to element borders.
 
 ## Import
 
-```js title="src/screens/SplashScreen.js"
+```js title="src/screens/Component.js"
 import { bdr } from "nativeflowcss";
 ```
 
 ## Properties
-
-import colorList from "@site/src/utils/colorList";
-import React from "react";
 
 <div className="scrollable-box">
   <table>
@@ -60,7 +60,7 @@ Custom properties are usually rendered using `_(customValue)`
 
 | Object                   | Native Properties              |
 | ------------------------ | ------------------------------ |
-| bdr.color\_(customColor) | `{ borderColor: customColor }` |
+| bdr.color_(customColor) | `{ borderColor: customColor }` |
 
 ## Colors
 

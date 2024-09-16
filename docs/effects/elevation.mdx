@@ -5,3 +5,47 @@ description: Control shadow depth to create elevation effects.
 slug: /elevation
 sidebar_position: 5
 ---
+
+Control shadow depth to create elevation effects.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { fx } from "nativeflowcss";
+```
+
+## Properties
+
+The [Shadow property](/docs/shadow) works in a similar way, but supports Android as well as iOS
+
+<div class="scrollable-box">
+
+| Object          | Native Properties   |
+| --------------- | ------------------- |
+| fx.elevation_0  | `{ elevation: 0 }`  |
+| fx.elevation_1  | `{ elevation: 1 }`  |
+| fx.elevation_2  | `{ elevation: 2 }`  |
+| fx.elevation_3  | `{ elevation: 3 }`  |
+| fx.elevation_4  | `{ elevation: 4 }`  |
+| fx.elevation_5  | `{ elevation: 5 }`  |
+| fx.elevation_6  | `{ elevation: 6 }`  |
+| fx.elevation_7  | `{ elevation: 7 }`  |
+| fx.elevation_8  | `{ elevation: 8 }`  |
+| fx.elevation_9  | `{ elevation: 9 }`  |
+| fx.elevation_10 | `{ elevation: 10 }` |
+
+</div>
+
+## Custom Elevation
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                    | Native Properties             |
+| ------------------------- | ----------------------------- |
+| fx.elevation_(customNumber) | `{ elevation: customNumber }` |
+
+<br />
+
+:::caution
+Only supported for Android 5.0+, check [elevation API](https://developer.android.com/training/material/shadows-clipping.html#Elevation) for more details
+:::

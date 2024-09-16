@@ -5,3 +5,41 @@ description: Adjust the transparency of elements.
 slug: /opacity
 sidebar_position: 2
 ---
+
+Adjust the transparency of elements.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { fx } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+
+| Object        | Native Properties  |
+| ------------- | ------------------ |
+| fx.opacity_0  | `{ opacity: 0 }`   |
+| fx.opacity_1  | `{ opacity: 0.1 }` |
+| fx.opacity_2  | `{ opacity: 0.2 }` |
+| fx.opacity_3  | `{ opacity: 0.3 }` |
+| fx.opacity_4  | `{ opacity: 0.4 }` |
+| fx.opacity_5  | `{ opacity: 0.5 }` |
+| fx.opacity_6  | `{ opacity: 0.6 }` |
+| fx.opacity_7  | `{ opacity: 0.7 }` |
+| fx.opacity_8  | `{ opacity: 0.8 }` |
+| fx.opacity_9  | `{ opacity: 0.9 }` |
+| fx.opacity_10 | `{ opacity: 1.0 }` |
+
+</div>
+
+## Custom opacity
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Opacity can only be defined within bounds [`0.0`, `1.0`]
+
+| Object                  | Native Properties           |
+| ----------------------- | --------------------------- |
+| fx.opacity_(customNumber) | `{ opacity: customNumber }` |
