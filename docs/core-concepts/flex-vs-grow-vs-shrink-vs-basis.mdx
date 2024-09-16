@@ -6,13 +6,13 @@ slug: /flex-vs-grow-vs-shrink-vs-basis
 sidebar_position: 2
 ---
 
-import SnackPlayer from '@site/src/components/SnackPlayer';
+import SnackPlayer from "@site/src/components/SnackPlayer";
 
 A comprehensive guide how elements expand to fill available space with various flex properties in React Native.
 
 ## Example code
 
-<SnackPlayer id="@mathdebate09/flex-vs-grow-vs-shrink-vs-basis" platform="web" preview="true" theme="dark" />
+<SnackPlayer id="@mathdebate09/flex-vs-grow-vs-shrink-vs-basis" />
 
 ## `flex: 0` (default)
 
@@ -77,7 +77,7 @@ With `flex: 1`, `height` is ignored. Use `flexBasis` instead.
 ## Here are my observations:
 
 - **Trouble Shooting Tip**: Make sure the parent view(s) are giving the children room to grow/shrink. Notice the `flex: 1` on the parent view, without it, all the children don't display as you'd expect.
-- **Trouble Shooting Tip**: Don't use Hot Reloading when testing these values, it can display elements incorrectly after it's reloaded a few times. I recommend enabling Live Reload or using command/ctrl + r (a lot).
+- **Trouble Shooting Tip**: Don't use Hot Reloading when testing these values, it can display elements incorrectly after it's reloaded a few times. I recommend enabling Live Reload or using <kbd>command</kbd>/<kbd>ctrl</kbd> + <kbd>r</kbd> (a lot).
 - The default flex value is `flex: 0`. If you don't add a flex style value it defaults to `0`.
 - **Trouble Shooting Tip**: if you're trying to figure out why something isn't displaying like you think it should, start with the (most) parent element and make sure it's giving enough space to it's children to do what they need to do. In other words, try setting it to `flex:1` and see if that helps, then go to the next child and repeat.
 - It seems like width is always considered with `flexDirection: "column"` no matter the other flex props. The same applies for height with `flexDirection: "row"`.

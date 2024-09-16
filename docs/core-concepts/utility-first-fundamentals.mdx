@@ -18,7 +18,7 @@ but using the CSS-in-JS type of syntax.
 
 The CSS-in-JS type of properties are verbose and take a bit of workaround to get running up due to newer namespaces, etc.
 
-<SnackPlayer id="@mathdebate09/react-native-vanilla" platform="web" preview="true" theme="dark" />
+<SnackPlayer id="@mathdebate09/react-native-vanilla" />
 
 <br />
 
@@ -28,7 +28,7 @@ So while preserving the Native approach, we get up running with shorter syntax, 
 
 <br />
 
-<SnackPlayer id="@mathdebate09/react-native-flow" platform="web" preview="true" theme="dark" />
+<SnackPlayer id="@mathdebate09/react-native-flow" />
 
 <br />
 
@@ -40,3 +40,20 @@ So while preserving the Native approach, we get up running with shorter syntax, 
 - We forcefully started injecting tailwind with the help of babel which worked fine, but breaks sometimes, more than often
 - The babel-injected approach also lacked animations and platform specific properties like `elevation` or `borderCurve`
 - And why should we hassle if we can stay close to the environment
+
+## Imports
+
+The only 'caveat' in using NativeFlow is, uhh... *Imports*, these being style objects need to be manually imported from the library, You can keep referring this section for Iports until something tasty is being cooked 🍛
+
+### Common Imports
+
+```jsx
+import { p, m, flex, align, text, justify, bdr, fx, h } from 'nativeflowcss';
+```
+
+### Everything Imports
+
+```jsx
+import { p, m, flex, align, justify, place, text, decoration, w, h, size, fx, shadow, aspect, object_fit, display, direction, pos, z, overflow } from 'nativeflowcss';
+```
+

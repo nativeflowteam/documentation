@@ -5,13 +5,21 @@ const SnackPlayer = ({
   id,
   platform = "web",
   preview = "true",
-  theme = "light",
+  theme = "dark",
 }) => {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://snack.expo.dev/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
+    const scriptId = "snack-embed-script";
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://snack.expo.dev/embed.js";
+      script.async = true;
+      document.body.appendChild(script);
+    } else {
+      if (window.ExpoSnack) {
+        window.ExpoSnack.initialize();
+      }
+    }
   }, []);
 
   return (
@@ -20,6 +28,7 @@ const SnackPlayer = ({
       data-snack-platform={platform}
       data-snack-preview={preview}
       data-snack-theme={theme}
+      data-snack-loading="lazy"
       style={{
         overflow: "hidden",
         background: "#0C0D0E",
