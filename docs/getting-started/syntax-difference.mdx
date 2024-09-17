@@ -5,3 +5,25 @@ description: How is NativeFlow different from Tailwind (syntax-wise)
 slug: /syntax
 sidebar_position: 3
 ---
+
+How is NativeFlow different from Tailwind (syntax-wise)
+
+## Differences
+
+There's usually a parent object which has sub-keys which spill the stylesheet object from the library
+
+- Tailwind uses `-`, NativeFlow uses `_` for joining words
+- Tailwind uses `[]`, NativeFlow uses `()` for taking custom value inputs
+- You need to wrap your custom properties with `""` (for numbers, it works without strings as well)
+- There's a minor `import` step you'll need to do manually (for now 😉), copy it from the [fundamentals](/docs/fundamentals) section
+
+> Ex. `bdr.rounded_("33")`
+
+## Why?
+
+All these nuances are being done so that we can use objects. 
+JavaScript does not allow using hyphens (`-`), numbers (in the first position of key).
+
+Also we can create a function as a key on the parent object which can spill stylesheet objects with custom values.
+
+

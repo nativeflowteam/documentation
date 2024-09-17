@@ -5,3 +5,92 @@ description: Control element offsets from any side.
 slug: /top-right-bottom-left
 sidebar_position: 6
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Control element offsets from any side.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { pos } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{`pos.t_px`}</td>
+        <td>
+          <code>{`{ top: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`pos.r_px`}</td>
+        <td>
+          <code>{`{ right: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`pos.b_px`}</td>
+        <td>
+          <code>{`{ bottom: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`pos.l_px`}</td>
+        <td>
+          <code>{`{ left: 1 }`}</code>
+        </td>
+      </tr>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`pos.t_${key}`}</td>
+            <td>
+              <code>{`{ top: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`pos.r_${key}`}</td>
+            <td>
+              <code>{`{ right: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`pos.b_${key}`}</td>
+            <td>
+              <code>{`{ bottom: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`pos.l_${key}`}</td>
+            <td>
+              <code>{`{ left: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Aspect Ratios
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object               | Native Properties         |
+| -------------------- | ------------------------- |
+| pos.t_(customValue)  | `{ top: customValue }`    |
+| pos.r_(customValue)  | `{ right: customValue }`  |
+| pos.b_(customValue)  | `{ bottom: customValue }` |
+| pos.l_(customValue)  | `{ left: customValue }`   |

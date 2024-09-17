@@ -5,3 +5,31 @@ description: Manage stacking order of overlapping elements.
 slug: /z-index
 sidebar_position: 8
 ---
+
+Manage stacking order of overlapping elements.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { z } from "nativeflowcss";
+```
+
+## Properties
+
+| Object       | Native properties       |
+| ------------ | ----------------------- |
+| z.index_auto | `{ zIndex: 'auto' }`    |
+| z.index_0    | `{ zIndex: 0 }`         |
+| z.index_10   | `{ zIndex: 10 }`        |
+| z.index_20   | `{ zIndex: 20 }`        |
+| z.index_30   | `{ zIndex: 30 }`        |
+| z.index_40   | `{ zIndex: 40 }`        |
+| z.index_50   | `{ zIndex: 50 }`        |
+
+## Custom Z-Index
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                   | Native Properties              |
+| ------------------------ | ------------------------------ |
+| z.index_(customValue)    | `{ zIndex: customValue }`      |

@@ -8,21 +8,22 @@ sidebar_position: 4
 
 How to input your desired values for various utility style-objects.
 
-## Similarities with Tailwind
+## How to generate Custom Styles
 
-- 'Almost' same utility names
-- Similar environment setup (custom autoprefixer prettier -plugin && Intellisense under development)
+- **Step 1**: Get the object you want to get custom generated and remove the value
+- **Step 2**: Add `()` at the end of the the object ( using the function )
+- **Step 3**: Give your desired input in the `string` format ( It also works with `number` so some properties )
 
-## Syntax
+### Example
 
-There's usually a parent object which has sub-keys which spill the stylesheet object from the library
+We'll try using a custom background color, using `#ccc` instead of `slate_300`
 
-- Tailwind uses `-` | NativeFlow uses `_`
-- Tailwind uses `[]` | NativeFlow uses `()`
-- There's a minor `import` step you'll need to do manually (for now 😉), copy it from the [fundamentals](/docs/fundamentals) section
+- **Step 1**: `fx.bg_color_slate_300` ➜ `fx.bg_color_`
+- **Step 2**: `fx. bg_color_()`
+- **Step 3**: `fx.bg_color_("#ccc")`
 
 :::tip
 
-For a detailed description on How-To use custom styles for certain properties, checkout their specific docs
+For a detailed description on How-To use custom styles for certain properties, checkout `#custom-property-values` section their specific docs
 
 :::

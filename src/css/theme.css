@@ -49,7 +49,12 @@
   padding-bottom: 0px;
   box-shadow: 6px 4px #b6d5e8;
 }
+
 [data-theme="dark"] .thought-box {
   border: 2px solid #6798c0;
   box-shadow: 6px 4px #6798c0;
+}
+
+.img-width {
+  max-width: 600px;
 }

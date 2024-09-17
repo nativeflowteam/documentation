@@ -5,3 +5,23 @@ description: Define how content/images fits within containers.
 slug: /object-fit
 sidebar_position: 3
 ---
+
+Define how content/images fits within containers.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { aspect } from "nativeflowcss";
+```
+
+## Properties
+
+| Object                | Native properties             |
+| --------------------- | ----------------------------- |
+| object_fit.cover      | `{ resizeMode: 'cover' }`     |
+| object_fit.contain    | `{ resizeMode: 'contain' }`   |
+| object_fit.stretch    | `{ resizeMode: 'stretch' }`   |
+| object_fit.repeat     | `{ resizeMode: 'repeat' }`    |
+| object_fit.center     | `{ resizeMode: 'center' }`    |
+| object_fit.fill       | `{ objectFit: 'fill' }`       |
+| object_fit.scale_down | `{ objectFit: 'scale_down' }` |

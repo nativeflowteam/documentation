@@ -5,3 +5,27 @@ description: Control width-to-height proportions of elements.
 slug: /aspect-ratio
 sidebar_position: 1
 ---
+
+Control width-to-height proportions of elements.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { aspect } from "nativeflowcss";
+```
+
+## Properties
+
+| Object        | Native properties         |
+| ------------- | ------------------------- |
+| aspect.auto   | `{ aspectRatio: 'auto' }` |
+| aspect.square | `{ aspectRatio: 1 }`      |
+| aspect.video  | `{ aspectRatio: 16 / 9 }` |
+
+## Custom Aspect Ratios
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                       | Native Properties              |
+| ---------------------------- | ------------------------------ |
+| aspect.custom_(customValue)  | `{ aspectRatio: customValue }` |
