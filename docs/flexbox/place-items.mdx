@@ -1,7 +1,31 @@
 ---
 id: place-items
 title: Place Items
-description: Align and distribute items within a container on both axes.
+description: Align and justify items within a container.
 slug: /place-items
-sidebar_position: 12
+sidebar_position: 13
 ---
+
+Align and justify items within a container.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { place } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+
+| Object              | Native properties                                                    |
+| ------------------- | -------------------------------------------------------------------- |
+| place.items_center  | `{ alignItems: 'center'`, <br/> `justifyContent: 'center' }`         |
+| place.items_stretch | `{ alignItems: 'stretch'`, <br/> `justifyContent: 'stretch' }`       |
+| place.items_start   | `{ alignItems: 'flex-start'`, <br/> `justifyContent: 'flex-start' }` |
+| place.items_end     | `{ alignItems: 'flex-end'`, <br/> `justifyContent: 'flex-end' }`     |
+| place.items_between | `{ alignItems: 'center'`, <br/> `justifyContent: 'space-between' }`  |
+| place.items_around  | `{ alignItems: 'center'`, <br/> `justifyContent: 'space-around' }`   |
+| place.items_evenly  | `{ alignItems: 'center'`, <br/> `justifyContent: 'space-evenly' }`   |
+
+</div>

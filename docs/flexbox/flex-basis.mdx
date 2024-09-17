@@ -5,3 +5,61 @@ description: Set initial size before elements grow or shrink.
 slug: /flex-basis
 sidebar_position: 4
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Set initial size before elements grow or shrink.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { flex } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{`flex.basis_auto`}</td>
+        <td>
+          <code>{`{ flexBasis: 'auto' }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`flex.basis_px`}</td>
+        <td>
+          <code>{`{ flexBasis: 1 }`}</code>
+        </td>
+      </tr>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`flex.basis_${key}`}</td>
+            <td>
+              <code>{`{ flexBasis: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Flex Basis
+
+Custom properties are usually rendered using `_(customValue)`
+
+> For `flexBasis` input type is `number`, except 'auto' being the only `string` input
+
+| Object               | Native Properties         |
+| -------------------- | ------------------------- |
+| flex.basis_(customValue)  | `{ flaxBasis: customValue }`    |

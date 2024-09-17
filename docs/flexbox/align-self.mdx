@@ -3,5 +3,24 @@ id: align-self
 title: Align Self
 description: Override alignment for individual flex items.
 slug: /align-self
-sidebar_position: 11
+sidebar_position: 12
 ---
+
+Override alignment for individual flex items.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { align } from "nativeflowcss";
+```
+
+## Properties
+
+| Object              | Native properties             |
+| ------------------- | ----------------------------- |
+| align.self_auto     | `{ alignSelf: 'auto' }`       |
+| align.self_center   | `{ alignSelf: 'center' }`     |
+| align.self_start    | `{ alignSelf: 'flex-start' }` |
+| align.self_end      | `{ alignSelf: 'flex-end' }`   |
+| align.self_stretch  | `{ alignSelf: 'stretch' }`    |
+| align.self_baseline | `{ alignSelf: 'baseline' }`   |

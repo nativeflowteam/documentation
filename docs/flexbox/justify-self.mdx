@@ -3,5 +3,27 @@ id: justify-self
 title: Justify Self ❔
 description: Custom alignment for individual items (Native workaround for the CSS equivalent).
 slug: /justify-self
-sidebar_position: 8
+sidebar_position: 9
 ---
+
+import SnackPlayer from "@site/src/components/SnackPlayer";
+
+Custom alignment for individual items (Native workaround for the CSS equivalent).
+
+## How
+
+Adding `flexDirection` to a component's style determines the **primary axis** of its layout.
+
+Adding `alignItems` to a component's style determines the alignment of children
+along the **secondary axis** (if the primary axis is row, then the secondary is column, and vice versa).
+
+## Workaround
+
+<SnackPlayer id="@mathdebate09/justify-self" />
+
+## Summary
+
+So the best solution is two wrap the element which you want to apply `justifySelf` with a `<View />` component
+and apply `flexDirection` to the parent and get the desired alignment using `align` or `justify`.
+
+> Reference: [Stackoverflow post](https://stackoverflow.com/questions/50847577/why-does-react-native-not-offer-a-justify-self)

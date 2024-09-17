@@ -3,5 +3,63 @@ id: gap
 title: Gap
 description: Manage spacing between flex items.
 slug: /gap
-sidebar_position: 6
+sidebar_position: 7
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Manage spacing between flex items.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { flex } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`flex.gap_${key}`}</td>
+            <td>
+              <code>{`{ gap: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`flex.gap_x_${key}`}</td>
+            <td>
+              <code>{`{ rowGap: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`flex.gap_y_${key}`}</td>
+            <td>
+              <code>{`{ columnGap: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Flex Basis
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                   | Native Properties            |
+| ------------------------ | ---------------------------- |
+| flex.gap_(customValue)   | `{ gap: customValue }`       |
+| flex.gap_x_(customValue) | `{ rowGap: customValue }`    |
+| flex.gap_y_(customValue) | `{ columnGap: customValue }` |

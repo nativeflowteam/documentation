@@ -3,5 +3,32 @@ id: justify-content
 title: Justify Content
 description: Distribute space and align items along the main axis.
 slug: /justify-content
-sidebar_position: 7
+sidebar_position: 8
 ---
+
+Distribute space and align items along the main axis.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { justify } from "nativeflowcss";
+```
+
+## Properties
+
+| Object          | Native properties                     |
+| --------------- | ------------------------------------- |
+| justify.center  | `{ justifyContent: 'center' }`        |
+| justify.start   | `{ justifyContent: 'flex-start' }`    |
+| justify.end     | `{ justifyContent: 'flex-end' }`      |
+| justify.between | `{ justifyContent: 'space-between' }` |
+| justify.around  | `{ justifyContent: 'space-around' }`  |
+| justify.evenly  | `{ justifyContent: 'space-evenly' }`  |
+
+<br />
+
+:::info
+
+`justifySelf` is not a React Native property, checkout the workaround with it on the next page
+
+:::

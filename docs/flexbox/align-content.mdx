@@ -3,5 +3,24 @@ id: align-content
 title: Align Content
 description: Distribute space among flex lines when wrapping.
 slug: /align-content
-sidebar_position: 10
+sidebar_position: 11
 ---
+
+Distribute space among flex lines when wrapping.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { align } from "nativeflowcss";
+```
+
+## Properties
+
+| Object                | Native properties                   |
+| --------------------- | ----------------------------------- |
+| align.content_center  | `{ alignContent: 'center' }`        |
+| align.content_start   | `{ alignContent: 'flex-start' }`    |
+| align.content_end     | `{ alignContent: 'flex-end' }`      |
+| align.content_stretch | `{ alignContent: 'stretch' }`       |
+| align.content_between | `{ alignContent: 'space-between' }` |
+| align.content_around  | `{ alignContent: 'space-around' }`  |
