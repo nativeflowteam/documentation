@@ -134,6 +134,23 @@ const config = {
             ],
           },
           {
+            title: "Donations",
+            items: [
+              {
+                label: "Ko-Fi",
+                href: "https://ko-fi.com/mathdebate09",
+              },
+              {
+                label: "PayPal",
+                href: "https://www.paypal.com/paypalme/jayowiee",
+              },
+              {
+                label: "Patreon",
+                href: "https://www.patreon.com/mathdebate09",
+              },
+            ],
+          },
+          {
             title: "More",
             items: [
               // {
@@ -141,8 +158,8 @@ const config = {
               //   to: "/blog",
               // },
               {
-                label: "GitHub",
-                href: "https://github.com/nativeflowteam/nativeflowcss",
+                label: "Contribute",
+                href: "https://github.com/nativeflowteam/documentation",
               },
             ],
           },

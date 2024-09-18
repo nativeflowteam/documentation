@@ -6,16 +6,162 @@ slug: /padding
 sidebar_position: 1
 ---
 
-Classes to add spacing inside element's border.
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Spacing outside element's border.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { w } from "nativeflowcss";
+```
 
 ## Properties
 
-| Classes       | Native Props                     |
-|---------------|-------------------------------|
-| `p.p(n)`        | `padding: n,`                 |
-| `p.x(n)`       | `paddingLeft: n,` `paddingRight: n,` |
-| `p.y(n)`       | `paddingTop: n,` `paddingBottom: n,` |
-| `p.t(n)`       | `paddingTop: n,`             |
-| `p.r(n)`       | `paddingRight: n,`           |
-| `p.b(n)`       | `paddingBottom: n,`          |
-| `p.l(n)`       | `paddingLeft: n,`            |
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{`p.p_px`}</td>
+        <td>
+          <code>{`{ padding: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.px_px`}</td>
+        <td>
+          <code>{`{ paddingLeft: 1, paddingRight: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.py_px`}</td>
+        <td>
+          <code>{`{ paddingTop: 1, paddingBottom: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.pt_px`}</td>
+        <td>
+          <code>{`{ paddingTop: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.pb_px`}</td>
+        <td>
+          <code>{`{ paddingBottom: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.pr_px`}</td>
+        <td>
+          <code>{`{ paddingRight: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.pl_px`}</td>
+        <td>
+          <code>{`{ paddingLeft: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.ps_px`}</td>
+        <td>
+          <code>{`{ paddingStart: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`p.pe_px`}</td>
+        <td>
+          <code>{`{ paddingEnd: 1 }`}</code>
+        </td>
+      </tr>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`p.p_${key}`}</td>
+            <td>
+              <code>{`{ padding: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.px_${key}`}</td>
+            <td>
+              <code>{`{ paddingLeft: ${value}, paddingRight: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.py_${key}`}</td>
+            <td>
+              <code>{`{ paddingTop: ${value}, paddingBottom: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.pt_${key}`}</td>
+            <td>
+              <code>{`{ paddingTop: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.pb_${key}`}</td>
+            <td>
+              <code>{`{ paddingBottom: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.pr_${key}`}</td>
+            <td>
+              <code>{`{ paddingRight: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.pl_${key}`}</td>
+            <td>
+              <code>{`{ paddingLeft: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.ps_${key}`}</td>
+            <td>
+              <code>{`{ paddingStart: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`p.pe_${key}`}</td>
+            <td>
+              <code>{`{ paddingEnd: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Padding
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Padding in React Native only supports the default `unitless` values (<s>auto</s>, <s>fit-content</s>, <s>max-content</s>, <s>full</s>)
+
+<div className="scrollable-box">
+
+| Object             | Native Properties                        |
+| ------------------ | ---------------------------------------- |
+| p.p_(customValue)  | `{ padding: customValue }`                |
+| p.px_(customValue) | `{ paddingLeft: customValue, paddingRight: customValue }` |
+| p.py_(customValue) | `{ paddingTop: customValue, paddingBottom: customValue }` |
+| p.pt_(customValue) | `{ paddingTop: customValue }`             |
+| p.pb_(customValue) | `{ paddingBottom: customValue }`          |
+| p.pr_(customValue) | `{ paddingRight: customValue }`           |
+| p.pl_(customValue) | `{ paddingLeft: customValue }`            |
+| p.ps_(customValue) | `{ paddingStart: customValue }`           |
+| p.pe_(customValue) | `{ paddingEnd: customValue }`             |
+
+</div>

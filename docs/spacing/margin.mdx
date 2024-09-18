@@ -6,16 +6,162 @@ slug: /margin
 sidebar_position: 2
 ---
 
-Classes to add spacing outside element's border.
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Spacing outside element's border.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { w } from "nativeflowcss";
+```
 
 ## Properties
 
-| Classes       | Native Props                     |
-|---------------|-------------------------------|
-| `m.m(n)`        | `margin: n,`                 |
-| `m.x(n)`       | `marginLeft: n,` `marginRight: n,` |
-| `m.y(n)`       | `marginTop: n,` `marginBottom: n,` |
-| `m.t(n)`       | `marginTop: n,`             |
-| `m.r(n)`       | `marginRight: n,`           |
-| `m.b(n)`       | `marginBottom: n,`          |
-| `m.l(n)`       | `marginLeft: n,`            |
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{`m.m_px`}</td>
+        <td>
+          <code>{`{ margin: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.mx_px`}</td>
+        <td>
+          <code>{`{ marginLeft: 1, marginRight: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.my_px`}</td>
+        <td>
+          <code>{`{ marginTop: 1, marginBottom: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.mt_px`}</td>
+        <td>
+          <code>{`{ marginTop: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.mb_px`}</td>
+        <td>
+          <code>{`{ marginBottom: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.mr_px`}</td>
+        <td>
+          <code>{`{ marginRight: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.ml_px`}</td>
+        <td>
+          <code>{`{ marginLeft: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.ms_px`}</td>
+        <td>
+          <code>{`{ marginStart: 1 }`}</code>
+        </td>
+      </tr>
+      <tr>
+        <td>{`m.me_px`}</td>
+        <td>
+          <code>{`{ marginEnd: 1 }`}</code>
+        </td>
+      </tr>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`m.m_${key}`}</td>
+            <td>
+              <code>{`{ margin: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.mx_${key}`}</td>
+            <td>
+              <code>{`{ marginLeft: ${value}, marginRight: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.my_${key}`}</td>
+            <td>
+              <code>{`{ marginTop: ${value}, marginBottom: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.mt_${key}`}</td>
+            <td>
+              <code>{`{ marginTop: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.mb_${key}`}</td>
+            <td>
+              <code>{`{ marginBottom: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.mr_${key}`}</td>
+            <td>
+              <code>{`{ marginRight: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.ml_${key}`}</td>
+            <td>
+              <code>{`{ marginLeft: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.ms_${key}`}</td>
+            <td>
+              <code>{`{ marginStart: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.me_${key}`}</td>
+            <td>
+              <code>{`{ marginEnd: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Margins
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Margin in React native only supports the default `unitless` values (<s>auto</s>, <s>fit-content</s>, <s>max-content</s>, <s>full</s>)
+
+<div className="scrollable-box">
+
+| Object             | Native Properties                        |
+| ------------------ | ---------------------------------------- |
+| m.m_(customValue)  | `{ margin: customValue }`                |
+| m.mx_(customValue) | `{ marginLeft: customValue, marginRight: customValue }` |
+| m.my_(customValue) | `{ marginTop: customValue, marginBottom: customValue }` |
+| m.mt_(customValue) | `{ marginTop: customValue }`             |
+| m.mb_(customValue) | `{ marginBottom: customValue }`          |
+| m.mr_(customValue) | `{ marginRight: customValue }`           |
+| m.ml_(customValue) | `{ marginLeft: customValue }`            |
+| m.ms_(customValue) | `{ marginStart: customValue }`           |
+| m.me_(customValue) | `{ marginEnd: customValue }`             |
+
+</div>
