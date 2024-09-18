@@ -29,7 +29,7 @@ import { shadow } from "nativeflowcss";
       <tr>
         <th>Object</th>
         <th>Native Properties</th>
-        <th>Color Box</th>
+        <th>Shadow Sphere</th>
       </tr>
     </thead>
     <tbody>
@@ -43,11 +43,12 @@ import { shadow } from "nativeflowcss";
             <td>
               <div
                 style={{
-                  width: "20px",
-                  border: `1px solid #606770`,
+                  width: "15px",
+                  height: "15px",
                   margin: "auto",
-                  height: "20px",
                   backgroundColor: `${value}`,
+                  borderRadius: "50%",
+                  boxShadow: `0 0 8px 4px ${value}80`, // 80 is the hex value for 50% opacity
                 }}
               ></div>
             </td>

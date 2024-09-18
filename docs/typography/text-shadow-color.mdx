@@ -1,7 +1,114 @@
 ---
 id: text-shadow-color
 title: Text Shadow Color
-description: bleh bleh
+description: Set the color of the text shadow.
 slug: /text-shadow-color
 sidebar_position: 11
 ---
+
+import colorList from "@site/src/utils/colorList";
+import React from "react";
+
+Set the color of the text shadow.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+        <th>Color Box</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(colorList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`text.shadow_color_${key}`}</td>
+            <td>
+              <code>{`{ textShadowColor: '${value}' }`}</code>
+            </td>
+            <td>
+              <div
+                style={{
+                  width: "30px",
+                  height: "20px",
+                  margin: "auto",
+                  borderRadius: "50%",
+                  textShadow: `${value} 1px 0 3px`, // 80 is the hex value for 50% opacity
+                }}
+              >Aa</div>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Shadow Colors
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                      | Native Properties              |
+| --------------------------- | ------------------------------ |
+| shadow.color\_(customColor) | `{ shadowColor: customColor }` |
+
+## Colors
+
+### Red Green Blue (RGB)
+
+React Native supports rgb() and rgba() in both hexadecimal and functional notation:
+
+- `'#f0f'` (#rgb)
+- `'#ff00ff'` (#rrggbb)
+- `'#f0ff'` (#rgba)
+- `'#ff00ff00'` (#rrggbbaa)
+- `'rgb(255, 0, 255)'`
+- `'rgb(255 0 255)'`
+- `'rgba(255, 0, 255, 1.0)'`
+- `'rgba(255 0 255 / 1.0)'`
+
+### Hue Saturation Lightness (HSL)
+
+React Native supports hsl() and hsla() in functional notation:
+
+- `'hsl(360, 100%, 100%)'`
+- `'hsl(360 100% 100%)'`
+- `'hsla(360, 100%, 100%, 1.0)'`
+- `'hsla(360 100% 100% / 1.0)'`
+
+### Hue Whiteness Blackness (HWB)
+
+React Native supports hwb() in functional notation:
+
+- `'hwb(0, 0%, 100%)'`
+- `'hwb(360, 100%, 100%)'`
+- `'hwb(0 0% 0%)'`
+- `'hwb(70 50% 0%)'`
+
+### Color ints
+
+React Native supports also colors as an int values (in RGB color mode):
+
+- `0xff00ff00` (0xrrggbbaa)
+
+:::caution CAUTION
+
+This action is dangerous
+This might appear similar to the Android Color ints representation but on Android values are stored in SRGB color mode `(0xaarrggbb)`.
+:::
+
+### Named Colors
+
+All colors from the [CSS3/SVG Specs](https://www.w3.org/TR/css-color-3/#svg-color) are supported.
+
+> They only support lowercase named colors

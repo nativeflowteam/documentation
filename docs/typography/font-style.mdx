@@ -5,3 +5,18 @@ description: Set text to normal or italic styles.
 slug: /font-style
 sidebar_position: 5
 ---
+
+Set text to normal or italic styles.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+| Object          | Native Properties         | Style Text                                                                                         |
+| --------------- | ------------------------- | -------------------------------------------------------------------------------------------------- |
+| text.italic     | `{ fontStyle: "italic" }` | <p style={{ fontStyle: "italic", fontSize: "18px", width: "40px", margin: "auto", height: "20px", fontWeight: "bold" }}>Aa</p> |
+| text.non_italic | `{ fontStyle: "normal" }` | <p style={{ fontStyle: "normal", fontSize: "18px", width: "40px", margin: "auto", height: "20px", fontWeight: "bold" }}>Aa</p> |

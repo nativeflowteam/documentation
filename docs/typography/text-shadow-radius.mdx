@@ -1,7 +1,50 @@
 ---
 id: text-shadow-radius
 title: Text Shadow Radius
-description: bleh bleh
+description: Define the blur radius of the text shadow.
 slug: /text-shadow-radius
 sidebar_position: 10
 ---
+
+import React from "react";
+
+Define the blur radius of the text shadow.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[...Array(25).keys()].map((i) => (
+        <React.Fragment key={i + 1}>
+          <tr>
+            <td>{`text.shadow_radius_${i}`}</td>
+            <td>
+              <code>{`{ textShadowRadius: ${i} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Shadow Opacity
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                           | Native Properties                   |
+| -------------------------------- | ----------------------------------- |
+| text.shadow_radius_(customValue) | `{ textShadowRadius: customValue }` |

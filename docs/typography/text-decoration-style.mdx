@@ -5,3 +5,20 @@ description: Define the style of text decorations, like solid or dotted.
 slug: /text-decoration-style
 sidebar_position: 8
 ---
+
+Apply underlines, overlines, or strikethroughs.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { decoration } from "nativeflowcss";
+```
+
+## Properties
+
+| Classes             | Native Props                        | Pattern Box                                                                                                                             |
+| ------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `decoration.solid`  | `{ textDecorationStyle: "solid" }`  | <p style={{ width: "100px", height: "20px", textDecorationLine: "underline", textDecorationStyle: "solid" }}>solid</p>   |
+| `decoration.dotted` | `{ textDecorationStyle: "dotted" }` | <p style={{ width: "100px", height: "20px", textDecorationLine: "underline", textDecorationStyle: "dotted" }}>dotted</p> |
+| `decoration.dashed` | `{ textDecorationStyle: "dashed" }` | <p style={{ width: "100px", height: "20px", textDecorationLine: "underline", textDecorationStyle: "dashed" }}>dashed</p> |
+| `decoration.double` | `{ textDecorationStyle: "double" }` | <p style={{ width: "100px", height: "20px", textDecorationLine: "underline", textDecorationStyle: "double" }}>double</p> |

@@ -32,7 +32,7 @@ import { shadow } from "nativeflowcss";
           <tr>
             <td>{`shadow.offset_${i}`}</td>
             <td>
-              <code>{`{ shadowOffset: ${i} }`}</code>
+              <code>{`{ shadowOffset: { width: ${i}, height: ${i} } }`}</code>
             </td>
           </tr>
         </React.Fragment>
@@ -47,4 +47,4 @@ Custom properties are usually rendered using `_(customValue)`
 
 | Object                                     | Native Properties                                                |
 | ------------------------------------------ | ---------------------------------------------------------------- |
-| shadow.offset_(customHeight, customWidth)  | `{ shadowOffset: { width: customHeight, height: customWidth } }` |
+| shadow.offset_(w, h)  | `{ shadowOffset: { width: w, height: h } }` |

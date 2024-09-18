@@ -5,3 +5,39 @@ description: Define the font family for text.
 slug: /font-family
 sidebar_position: 2
 ---
+
+Define the font family for text.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+| Object                | Native Properties               |
+| --------------------- | ------------------------------- |
+| text.font_family(path) | `{ fontFamily: path }`          |
+
+## Usage
+
+To use a custom font family, pass the font path as a string to the `font_family` function.
+
+```js title="src/screens/Component.js"
+import React from "react";
+import { Text, View, StyleSheet } from "react-native";
+import { text } from "nativeflowcss";
+
+const CustomFontComponent = () => {
+  return (
+    <View style={{[flex.f_1, justify.center, align.items_center]}}>
+      <Text style={{[text.font_family('../assets/fonts/Libre-Franklin.ttf'), text.fs_xl]}}>
+        This text uses the Libre Franklin font.
+      </Text>
+    </View>
+  );
+};
+
+export default CustomFontComponent;
+```

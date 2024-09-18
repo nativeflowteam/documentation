@@ -1,7 +1,25 @@
 ---
 id: text-user-select
 title: User Select
-description: bleh bleh
+description: Control the user selection behavior of text.
 slug: /text-user-select
 sidebar_position: 15
 ---
+
+Control the user selection behavior of text.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+| Object              | Native properties           | Example Text                                                             |
+| ------------------- | --------------------------- | ------------------------------------------------------------------------ |
+| text.select_auto    | `{ userSelect: "auto" }`    | <span style={{ userSelect: "auto" }}>Selectable Text</span>              |
+| text.select_text    | `{ userSelect: "text" }`    | <span style={{ userSelect: "text" }}>Selectable Text</span>              |
+| text.select_none    | `{ userSelect: "none" }`    | <span style={{ userSelect: "none" }}>Non-selectable Text</span>          |
+| text.select_contain | `{ userSelect: "contain" }` | <span style={{ userSelect: "contain" }}>Contained Selectable Text</span> |
+| text.select_all     | `{ userSelect: "all" }`     | <span style={{ userSelect: "all" }}>All Selectable Text</span>           |

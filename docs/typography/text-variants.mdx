@@ -5,3 +5,21 @@ description: Control typographic variants like small-caps or numbers.
 slug: /text-variants
 sidebar_position: 13
 ---
+
+Control typographic variants like small-caps or numbers.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+| Object            | Native properties                      | Example Text                                                    |
+| ----------------- | -------------------------------------- | --------------------------------------------------------------- |
+| text.smallcaps    | `{ fontVariant: "small-caps" }`        | <span style={{ fontVariant: "small-caps" }}>Aa123</span>        |
+| text.oldstyle     | `{ fontVariant: "oldstyle-nums" }`     | <span style={{ fontVariant: "oldstyle-nums" }}>Aa123</span>     |
+| text.lining       | `{ fontVariant: "lining-nums" }`       | <span style={{ fontVariant: "lining-nums" }}>Aa123</span>       |
+| text.tabular      | `{ fontVariant: "tabular-nums" }`      | <span style={{ fontVariant: "tabular-nums" }}>Aa123</span>      |
+| text.proportional | `{ fontVariant: "proportional-nums" }` | <span style={{ fontVariant: "proportional-nums" }}>Aa123</span> |

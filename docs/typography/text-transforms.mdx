@@ -5,3 +5,20 @@ description: Change text case to uppercase, lowercase, or capitalize.
 slug: /text-transforms
 sidebar_position: 14
 ---
+
+Change text case to uppercase, lowercase, or capitalize.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+| Object                    | Native properties                        | Example Text |
+| ------------------------- | ---------------------------------------- | ------------ |
+| text.none        | `{ textTransform: 'none' }`              | <span style={{ textTransform: "none" }}>Aa</span> |
+| text.uppercase   | `{ textTransform: 'uppercase' }`         | <span style={{ textTransform: "uppercase" }}>Aa</span> |
+| text.lowercase   | `{ textTransform: 'lowercase' }`         | <span style={{ textTransform: "lowercase" }}>Aa</span> |
+| text.capitalize  | `{ textTransform: 'capitalize' }`        | <span style={{ textTransform: "capitalize" }}>Aa</span> |

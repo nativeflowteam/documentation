@@ -1,7 +1,50 @@
 ---
 id: text-shadow-offset
 title: Text Shadow Offset
-description: bleh bleh
+description: Adjust the horizontal and vertical position of the text shadow.
 slug: /text-shadow-offset
 sidebar_position: 12
 ---
+
+import React from "react";
+
+Adjust the horizontal and vertical position of the shadow.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { text } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[...Array(25).keys()].map((i) => (
+        <React.Fragment key={i + 1}>
+          <tr>
+            <td>{`text.shadow_offset_${i}`}</td>
+            <td>
+              <code>{`{ textShadowOffset: { width: ${i}, height: ${i} } }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Shadow Offsets
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                                     | Native Properties                                                |
+| ------------------------------------------ | ---------------------------------------------------------------- |
+| text.shadow_offset_(w, h)  | `{ textShadowOffset: { width: w, height: h } }` |

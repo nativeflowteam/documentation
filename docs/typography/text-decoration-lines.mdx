@@ -5,3 +5,20 @@ description: Apply underlines, overlines, or strikethroughs.
 slug: /text-decoration-lines
 sidebar_position: 7
 ---
+
+Apply underlines, overlines, or strikethroughs.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { decoration } from "nativeflowcss";
+```
+
+## Properties
+
+| Object                            | Native properties                                  | Text Lines |
+| --------------------------------- | -------------------------------------------------- | ---------- |
+| decoration.underline              | `{ textDecorationLine: 'underline' }`              | <span style={{ textDecorationLine: "underline" }}>Aa</span> |
+| decoration.line_through           | `{ textDecorationLine: 'line-through' }`           | <span style={{ textDecorationLine: "line-through"}}>Aa</span> |
+| decoration.underline_line_through | `{ textDecorationLine: 'underline line-through' }` | <span style={{ textDecorationLine: "underline line-through"}}>Aa</span> |
+| decoration.none                   | `{ textDecorationLine: 'none' }`                   | <span style={{ textDecorationLine: "none"}}>Aa</span> |
