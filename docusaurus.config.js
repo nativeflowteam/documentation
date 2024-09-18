@@ -75,7 +75,13 @@ const config = {
       image: "img/docusaurus-social-card.jpg",
       metadata: [
         {name: 'keywords', content: 'react-native, React Native, UI Library, Tailwind, Native Styling, React Native CSS, react native design, easy setup ui, stylesheets, style objects, minimal UI'},
-        {name: 'twitter:card', content: 'img/banner.png'},
+        {name: 'twitter:card', content: 'https://mathdebate09.github.io/dummy-img-cdn/assets/nativeflow/twitter.png'},
+        {name: 'twitter:image', content: 'https://mathdebate09.github.io/dummy-img-cdn/assets/nativeflow/twitter.png'},        {name: 'twitter:card', content: 'https://mathdebate09.github.io/dummy-img-cdn/assets/nativeflow/twitter.png'},
+        {name: 'og:image', content: 'https://mathdebate09.github.io/dummy-img-cdn/assets/nativeflow/meta.png'},
+        {name:'og:type', content: 'website'},
+        {name: 'og:image:type', content: 'image/png'},
+        {name: 'og:image:width', content: '256'},
+        {name: 'og:image:height', content: '256'}
       ],
       navbar: {
         title: "NativeFlow",
