@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "NativeFlow",
-  tagline: "Utility style-objects for React Native, to seamlessly switch from Tailwind on web to NF on Native, no extra setup required, import and use!",
+  tagline: "Utility style-objects for React Native, to seamlessly switch from Tailwind on web to NativeFlow on app, no extra setup required, import and use!",
   favicon: "img/favicon.svg",
 
   // Set the production url of your site here
