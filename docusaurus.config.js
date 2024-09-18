@@ -73,6 +73,10 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      metadata: [
+        {name: 'keywords', content: 'react-native, React Native, UI Library, Tailwind, Native Styling, React Native CSS, react native design, easy setup ui, stylesheets, style objects, minimal UI'},
+        {name: 'twitter:card', content: 'img/banner.png'},
+      ],
       navbar: {
         title: "NativeFlow",
         logo: {
