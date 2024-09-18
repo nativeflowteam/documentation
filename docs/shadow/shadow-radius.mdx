@@ -3,7 +3,7 @@ id: shadow-radius
 title: Shadow Radius
 description: Define the blur radius of the shadow.
 slug: /shadow-radius
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 import React from "react";
@@ -30,7 +30,7 @@ import { shadow } from "nativeflowcss";
       {[...Array(25).keys()].map((i) => (
         <React.Fragment key={i + 1}>
           <tr>
-            <td>{`shadow.radius_${i}`}</td>
+            <td>{`shadow.rounded_${i}`}</td>
             <td>
               <code>{`{ shadowRadius: ${i} }`}</code>
             </td>
@@ -47,4 +47,4 @@ Custom properties are usually rendered using `_(customValue)`
 
 | Object                       | Native Properties                          |
 | ---------------------------- | ------------------------------------------ |
-| shadow.radius_(customValue) | `{ shadowRadius: customValue }`           |
+| shadow.rounded_(customValue) | `{ shadowRadius: customValue }`            |
