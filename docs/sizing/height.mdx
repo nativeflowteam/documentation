@@ -1,7 +1,53 @@
 ---
 id: height
 title: Height
-description: Set the height of elements.
+description: Control the height of elements.
 slug: /height
 sidebar_position: 4
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Control the height of elements.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { h } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`h.h_${key}`}</td>
+            <td>
+              <code>{`{ height: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Heights
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Height in React Native does not support `%` unit as of now
+
+| Object                       | Native Properties              |
+| ---------------------------- | ------------------------------ |
+| h.h_(customValue)  | `{ height: customValue }` |

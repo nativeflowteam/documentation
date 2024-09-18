@@ -5,3 +5,49 @@ description: Limit the maximum height of elements.
 slug: /max-height
 sidebar_position: 6
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Limit the maximum height of elements.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { h } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`h.max_${key}`}</td>
+            <td>
+              <code>{`{ maxHeight: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Max Heights
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Max Height in React Native does not support `%` unit as of now
+
+| Object             | Native Properties        |
+| ------------------ | ------------------------ |
+| h.max_(customValue)  | `{ maxHeight: customValue }` |

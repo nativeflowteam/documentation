@@ -5,3 +5,49 @@ description: Define the minimum height an element can have.
 slug: /min-height
 sidebar_position: 5
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Define the minimum height an element can have.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { h } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`h.min_${key}`}</td>
+            <td>
+              <code>{`{ minHeight: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Min Heights
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Min Height in React Native does not support `%` unit as of now
+
+| Object             | Native Properties        |
+| ------------------ | ------------------------ |
+| h.min_(customValue)  | `{ minHeight: customValue }` |

@@ -5,3 +5,49 @@ description: Create square-shaped elements with equal width and height.
 slug: /size
 sidebar_position: 7
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Create square-shaped elements with equal width and height.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { size } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`size.s_${key}`}</td>
+            <td>
+              <code>{`{ width: ${value}, height: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Sizes
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Size in React Native does not support `%` unit as of now
+
+| Object             | Native Properties        |
+| ------------------ | ------------------------ |
+| size.s_(customValue)  | `{ width: customValue, height: customValue }` |

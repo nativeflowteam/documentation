@@ -5,3 +5,49 @@ description: Define the minimum width an element can have.
 slug: /min-width
 sidebar_position: 2
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Define the minimum width an element can have.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { w } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`w.min_${key}`}</td>
+            <td>
+              <code>{`{ minWidth: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Min Widths
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Min Width in React Native does not support `%` unit as of now
+
+| Object             | Native Properties        |
+| ------------------ | ------------------------ |
+| w.min_(customValue)  | `{ minWidth: customValue }` |

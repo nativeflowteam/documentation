@@ -1,7 +1,53 @@
 ---
 id: width
 title: Width
-description: Spacing inside element's border.
+description: Control the width of elements.
 slug: /width
 sidebar_position: 1
 ---
+
+import React from "react";
+import valueList from "@site/src/utils/valueList";
+
+Control the width of elements.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { w } from "nativeflowcss";
+```
+
+## Properties
+
+<div className="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {Object.entries(valueList).map(([key, value]) => (
+        <React.Fragment key={key}>
+          <tr>
+            <td>{`w.w_${key}`}</td>
+            <td>
+              <code>{`{ width: ${value} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Widths
+
+Custom properties are usually rendered using `_(customValue)`
+
+> Width in React Native does not support `%` unit as of now
+
+| Object             | Native Properties        |
+| ------------------ | ------------------------ |
+| w.w_(customValue)  | `{ width: customValue }` |
