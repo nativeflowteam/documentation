@@ -5,3 +5,46 @@ description: Control the transparency of the shadow.
 slug: /shadow-opacity
 sidebar_position: 3
 ---
+
+import React from "react";
+
+Sets the drop shadow opacity (multiplied by the color's alpha component).
+
+## Import
+
+```js title="src/screens/Component.js"
+import { shadow } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[...Array(25).keys()].map((i) => (
+        <React.Fragment key={i + 1}>
+          <tr>
+            <td>{`shadow.opacity_${i}`}</td>
+            <td>
+              <code>{`{ shadowOpacity: ${i} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Shadow Opacity
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                       | Native Properties                          |
+| ---------------------------- | ------------------------------------------ |
+| shadow.opacity_(customValue) | `{ shadowOpacity: customValue }`           |

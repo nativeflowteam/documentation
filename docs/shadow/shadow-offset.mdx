@@ -5,3 +5,46 @@ description: Adjust the horizontal and vertical position of the shadow.
 slug: /shadow-offset
 sidebar_position: 2
 ---
+
+import React from "react";
+
+Adjust the horizontal and vertical position of the shadow.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { shadow } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[...Array(25).keys()].map((i) => (
+        <React.Fragment key={i + 1}>
+          <tr>
+            <td>{`shadow.offset_${i}`}</td>
+            <td>
+              <code>{`{ shadowOffset: ${i} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Shadow Offsets
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                                     | Native Properties                                                |
+| ------------------------------------------ | ---------------------------------------------------------------- |
+| shadow.offset_(customHeight, customWidth)  | `{ shadowOffset: { width: customHeight, height: customWidth } }` |

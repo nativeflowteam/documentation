@@ -5,3 +5,45 @@ description: Define the blur radius of the shadow.
 slug: /shadow-radius
 sidebar_position: 4
 ---
+import React from "react";
+
+Define the blur radius of the shadow.
+
+## Import
+
+```js title="src/screens/Component.js"
+import { shadow } from "nativeflowcss";
+```
+
+## Properties
+
+<div class="scrollable-box">
+  <table>
+    <thead>
+      <tr>
+        <th>Object</th>
+        <th>Native Properties</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[...Array(25).keys()].map((i) => (
+        <React.Fragment key={i + 1}>
+          <tr>
+            <td>{`shadow.radius_${i}`}</td>
+            <td>
+              <code>{`{ shadowRadius: ${i} }`}</code>
+            </td>
+          </tr>
+        </React.Fragment>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+## Custom Shadow Opacity
+
+Custom properties are usually rendered using `_(customValue)`
+
+| Object                       | Native Properties                          |
+| ---------------------------- | ------------------------------------------ |
+| shadow.radius_(customValue) | `{ shadowRadius: customValue }`           |
