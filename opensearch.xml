@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>NativeFlow</ShortName>
+  <Description>Search NativeFlow</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://nativeflow.js.org/img/favicon.svg</Image>
+  <Url type="text/html" method="get" template="https://nativeflow.js.org/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://nativeflow.js.org/opensearch.xml" />
+  <moz:SearchForm>https://nativeflow.js.org/</moz:SearchForm>
+</OpenSearchDescription>
