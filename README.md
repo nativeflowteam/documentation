@@ -1,41 +1,11 @@
-# Website
+# [nativeflow.js.org](nttps://naitveflow.js.org)
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Documentation for React Native UI Utility-Objects Library - [NativeFlow](https://github.com/nativeflowteam/nativeflowcss), for quicker styling experience with wider property support while staying closer the ecosystem, so that it does not *secretly* breaks your UI.
 
-### Installation
+## Contributing
 
-```
-$ yarn
-```
+NativeFlow entirely depends on the open-source contributions which are provided by the volunteers like yourself for the library to grow and thrive. We e welcome contributors of all experience levels and backgrounds to help maintain this awesome library and it's docs, if you'd like to contribute be sure to thoroughly read our [contributing guide](CONTRIBUTING.md).
 
-### Local Development
+## Found an issue?
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+We're always actively looking for ways to improve the documentation, please check [issues](https://github.com/nativeflowteam/documentation/issues) or [open a new issue](https://github.com/nativeflowteam/documentation/issues/new/choose)
