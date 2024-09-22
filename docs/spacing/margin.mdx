@@ -83,11 +83,17 @@ import { w } from "nativeflowcss";
         </td>
       </tr>
       {Object.entries(valueList).map(([key, value]) => (
-        <React.Fragment key={key}>
+                <React.Fragment key={key}>
           <tr>
             <td>{`m.m_${key}`}</td>
             <td>
               <code>{`{ margin: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.neg_m_${key}`}</td>
+            <td>
+              <code>{`{ margin: -${value} }`}</code>
             </td>
           </tr>
           <tr>
@@ -97,9 +103,21 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
+            <td>{`m.neg_mx_${key}`}</td>
+            <td>
+              <code>{`{ marginLeft: -${value}, marginRight: -${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
             <td>{`m.my_${key}`}</td>
             <td>
               <code>{`{ marginTop: ${value}, marginBottom: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.neg_my_${key}`}</td>
+            <td>
+              <code>{`{ marginTop: -${value}, marginBottom: -${value} }`}</code>
             </td>
           </tr>
           <tr>
@@ -109,9 +127,21 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
+            <td>{`m.neg_mt_${key}`}</td>
+            <td>
+              <code>{`{ marginTop: -${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
             <td>{`m.mb_${key}`}</td>
             <td>
               <code>{`{ marginBottom: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.neg_mb_${key}`}</td>
+            <td>
+              <code>{`{ marginBottom: -${value} }`}</code>
             </td>
           </tr>
           <tr>
@@ -121,9 +151,21 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
+            <td>{`m.neg_mr_${key}`}</td>
+            <td>
+              <code>{`{ marginRight: -${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
             <td>{`m.ml_${key}`}</td>
             <td>
               <code>{`{ marginLeft: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.neg_ml_${key}`}</td>
+            <td>
+              <code>{`{ marginLeft: -${value} }`}</code>
             </td>
           </tr>
           <tr>
@@ -133,9 +175,21 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
+            <td>{`m.neg_ms_${key}`}</td>
+            <td>
+              <code>{`{ marginStart: -${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
             <td>{`m.me_${key}`}</td>
             <td>
               <code>{`{ marginEnd: ${value} }`}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>{`m.neg_me_${key}`}</td>
+            <td>
+              <code>{`{ marginEnd: -${value} }`}</code>
             </td>
           </tr>
         </React.Fragment>
@@ -149,11 +203,13 @@ import { w } from "nativeflowcss";
 Custom properties are usually rendered using `_(customValue)`
 
 > Margin in React native only supports the default `unitless` values (<s>auto</s>, <s>fit-content</s>, <s>max-content</s>, <s>full</s>)
+> To use custom negative margins, pass the mas numbers, no specific keys required
 
 <div className="scrollable-box">
 
 | Object             | Native Properties                        |
 | ------------------ | ---------------------------------------- |
+| m.m_(customValue)  | `{ margin: customValue }`                |
 | m.m_(customValue)  | `{ margin: customValue }`                |
 | m.mx_(customValue) | `{ marginLeft: customValue, marginRight: customValue }` |
 | m.my_(customValue) | `{ marginTop: customValue, marginBottom: customValue }` |
