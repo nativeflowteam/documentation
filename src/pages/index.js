@@ -12,9 +12,16 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className={clsx("hero__title")}>
-          {siteConfig.title}
-        </Heading>
+        <div className={styles.titleWithLogo}>
+          <img
+            src="https://ik.imagekit.io/jayowiee/github/nativeflow/nativeflow-logo.png"
+            alt="NativeFlow logo"
+            className={styles.titleLogo}
+          />
+          <Heading as="h1" className={clsx("hero__title", styles.titleText)}>
+            {siteConfig.title}
+          </Heading>
+        </div>
         <p className="">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
