@@ -27,12 +27,12 @@ import { text } from "nativeflowcss";
       </tr>
     </thead>
     <tbody>
-      {[...Array(25).keys()].map((i) => (
+      {[...Array(24).keys()].map((i) => (
         <React.Fragment key={i + 1}>
           <tr>
-            <td>{`text.shadow_radius_${i}`}</td>
+            <td>{`text.shadow_radius_${i + 1}`}</td>
             <td>
-              <code>{`{ textShadowRadius: ${i} }`}</code>
+              <code>{`{ textShadowRadius: ${i + 1} }`}</code>
             </td>
           </tr>
         </React.Fragment>
