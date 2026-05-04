@@ -14,7 +14,7 @@ Spacing outside element's border.
 ## Import
 
 ```js title="src/screens/Component.js"
-import { w } from "nativeflowcss";
+import { m } from "nativeflowcss";
 ```
 
 ## Properties
@@ -91,21 +91,9 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
-            <td>{`m.neg_m_${key}`}</td>
-            <td>
-              <code>{`{ margin: -${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
             <td>{`m.mx_${key}`}</td>
             <td>
               <code>{`{ marginLeft: ${value}, marginRight: ${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
-            <td>{`m.neg_mx_${key}`}</td>
-            <td>
-              <code>{`{ marginLeft: -${value}, marginRight: -${value} }`}</code>
             </td>
           </tr>
           <tr>
@@ -115,21 +103,9 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
-            <td>{`m.neg_my_${key}`}</td>
-            <td>
-              <code>{`{ marginTop: -${value}, marginBottom: -${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
             <td>{`m.mt_${key}`}</td>
             <td>
               <code>{`{ marginTop: ${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
-            <td>{`m.neg_mt_${key}`}</td>
-            <td>
-              <code>{`{ marginTop: -${value} }`}</code>
             </td>
           </tr>
           <tr>
@@ -139,21 +115,9 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
-            <td>{`m.neg_mb_${key}`}</td>
-            <td>
-              <code>{`{ marginBottom: -${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
             <td>{`m.mr_${key}`}</td>
             <td>
               <code>{`{ marginRight: ${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
-            <td>{`m.neg_mr_${key}`}</td>
-            <td>
-              <code>{`{ marginRight: -${value} }`}</code>
             </td>
           </tr>
           <tr>
@@ -163,33 +127,15 @@ import { w } from "nativeflowcss";
             </td>
           </tr>
           <tr>
-            <td>{`m.neg_ml_${key}`}</td>
-            <td>
-              <code>{`{ marginLeft: -${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
             <td>{`m.ms_${key}`}</td>
             <td>
               <code>{`{ marginStart: ${value} }`}</code>
             </td>
           </tr>
           <tr>
-            <td>{`m.neg_ms_${key}`}</td>
-            <td>
-              <code>{`{ marginStart: -${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
             <td>{`m.me_${key}`}</td>
             <td>
               <code>{`{ marginEnd: ${value} }`}</code>
-            </td>
-          </tr>
-          <tr>
-            <td>{`m.neg_me_${key}`}</td>
-            <td>
-              <code>{`{ marginEnd: -${value} }`}</code>
             </td>
           </tr>
         </React.Fragment>
@@ -200,24 +146,26 @@ import { w } from "nativeflowcss";
 
 ## Custom Margins
 
-Custom properties are usually rendered using `_(customValue)`
+Custom properties are rendered using `_(customValue)`.
+`m.m_(...)` accepts exactly 1, 2, or 4 values.
 
-> Margin in React native only supports the default `unitless` values (<s>auto</s>, <s>fit-content</s>, <s>max-content</s>, <s>full</s>)
-> To use custom negative margins, pass the mas numbers, no specific keys required
+> Margin in React Native only supports the default `unitless` values (<s>auto</s>, <s>fit-content</s>, <s>max-content</s>, <s>full</s>)
+> To use custom negative margins, pass negative numbers directly (for example, `m.m_(-8)`).
 
 <div className="scrollable-box">
 
-| Object             | Native Properties                        |
-| ------------------ | ---------------------------------------- |
-| m.m_(customValue)  | `{ margin: customValue }`                |
-| m.m_(customValue)  | `{ margin: customValue }`                |
-| m.mx_(customValue) | `{ marginLeft: customValue, marginRight: customValue }` |
-| m.my_(customValue) | `{ marginTop: customValue, marginBottom: customValue }` |
-| m.mt_(customValue) | `{ marginTop: customValue }`             |
-| m.mb_(customValue) | `{ marginBottom: customValue }`          |
-| m.mr_(customValue) | `{ marginRight: customValue }`           |
-| m.ml_(customValue) | `{ marginLeft: customValue }`            |
-| m.ms_(customValue) | `{ marginStart: customValue }`           |
-| m.me_(customValue) | `{ marginEnd: customValue }`             |
+| Object                     | Native Properties                                                     |
+| -------------------------- | --------------------------------------------------------------------- |
+| m.m_(customValue)          | `{ margin: customValue }`                                             |
+| m.m_(vertical, horizontal) | `{ marginVertical: vertical, marginHorizontal: horizontal }`          |
+| m.m_(top, right, bottom, left) | `{ marginTop: top, marginRight: right, marginBottom: bottom, marginLeft: left }` |
+| m.mx_(customValue)         | `{ marginLeft: customValue, marginRight: customValue }`               |
+| m.my_(customValue)         | `{ marginTop: customValue, marginBottom: customValue }`               |
+| m.mt_(customValue)         | `{ marginTop: customValue }`                                          |
+| m.mb_(customValue)         | `{ marginBottom: customValue }`                                       |
+| m.mr_(customValue)         | `{ marginRight: customValue }`                                        |
+| m.ml_(customValue)         | `{ marginLeft: customValue }`                                         |
+| m.ms_(customValue)         | `{ marginStart: customValue }`                                        |
+| m.me_(customValue)         | `{ marginEnd: customValue }`                                          |
 
 </div>

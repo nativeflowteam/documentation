@@ -9,12 +9,12 @@ sidebar_position: 1
 import React from "react";
 import valueList from "@site/src/utils/valueList";
 
-Spacing outside element's border.
+Spacing inside element's border.
 
 ## Import
 
 ```js title="src/screens/Component.js"
-import { w } from "nativeflowcss";
+import { p } from "nativeflowcss";
 ```
 
 ## Properties
@@ -146,22 +146,25 @@ import { w } from "nativeflowcss";
 
 ## Custom Padding
 
-Custom properties are usually rendered using `_(customValue)`
+Custom properties are rendered using `_(customValue)`.
+`p.p_(...)` accepts exactly 1, 2, or 4 values.
 
 > Padding in React Native only supports the default `unitless` values (<s>auto</s>, <s>fit-content</s>, <s>max-content</s>, <s>full</s>)
 
 <div className="scrollable-box">
 
-| Object             | Native Properties                        |
-| ------------------ | ---------------------------------------- |
-| p.p_(customValue)  | `{ padding: customValue }`                |
-| p.px_(customValue) | `{ paddingLeft: customValue, paddingRight: customValue }` |
-| p.py_(customValue) | `{ paddingTop: customValue, paddingBottom: customValue }` |
-| p.pt_(customValue) | `{ paddingTop: customValue }`             |
-| p.pb_(customValue) | `{ paddingBottom: customValue }`          |
-| p.pr_(customValue) | `{ paddingRight: customValue }`           |
-| p.pl_(customValue) | `{ paddingLeft: customValue }`            |
-| p.ps_(customValue) | `{ paddingStart: customValue }`           |
-| p.pe_(customValue) | `{ paddingEnd: customValue }`             |
+| Object                     | Native Properties                                                        |
+| -------------------------- | ------------------------------------------------------------------------ |
+| p.p_(customValue)          | `{ padding: customValue }`                                               |
+| p.p_(vertical, horizontal) | `{ paddingVertical: vertical, paddingHorizontal: horizontal }`           |
+| p.p_(top, right, bottom, left) | `{ paddingTop: top, paddingRight: right, paddingBottom: bottom, paddingLeft: left }` |
+| p.px_(customValue)         | `{ paddingLeft: customValue, paddingRight: customValue }`               |
+| p.py_(customValue)         | `{ paddingTop: customValue, paddingBottom: customValue }`               |
+| p.pt_(customValue)         | `{ paddingTop: customValue }`                                            |
+| p.pb_(customValue)         | `{ paddingBottom: customValue }`                                         |
+| p.pr_(customValue)         | `{ paddingRight: customValue }`                                          |
+| p.pl_(customValue)         | `{ paddingLeft: customValue }`                                           |
+| p.ps_(customValue)         | `{ paddingStart: customValue }`                                          |
+| p.pe_(customValue)         | `{ paddingEnd: customValue }`                                            |
 
 </div>

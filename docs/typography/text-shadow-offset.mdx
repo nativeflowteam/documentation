@@ -27,12 +27,12 @@ import { text } from "nativeflowcss";
       </tr>
     </thead>
     <tbody>
-      {[...Array(25).keys()].map((i) => (
+      {[...Array(24).keys()].map((i) => (
         <React.Fragment key={i + 1}>
           <tr>
-            <td>{`text.shadow_offset_${i}`}</td>
+            <td>{`text.shadow_offset_${i + 1}`}</td>
             <td>
-              <code>{`{ textShadowOffset: { width: ${i}, height: ${i} } }`}</code>
+              <code>{`{ textShadowOffset: { width: ${i + 1}, height: ${i + 1} } }`}</code>
             </td>
           </tr>
         </React.Fragment>

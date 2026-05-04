@@ -48,6 +48,108 @@ import { bdr } from "nativeflowcss";
               ></div>
             </td>
           </tr>
+          <tr>
+            <td>{`bdr.b_color_${key}`}</td>
+            <td>
+              <code>{`{ borderBottomColor: '${value}' }`}</code>
+            </td>
+            <td>
+              <div
+                style={{
+                  width: "20px",
+                  border: `1px solid #606770`,
+                  margin: "auto",
+                  height: "20px",
+                  backgroundColor: `${value}`,
+                }}
+              ></div>
+            </td>
+          </tr>
+          <tr>
+            <td>{`bdr.l_color_${key}`}</td>
+            <td>
+              <code>{`{ borderLeftColor: '${value}' }`}</code>
+            </td>
+            <td>
+              <div
+                style={{
+                  width: "20px",
+                  border: `1px solid #606770`,
+                  margin: "auto",
+                  height: "20px",
+                  backgroundColor: `${value}`,
+                }}
+              ></div>
+            </td>
+          </tr>
+          <tr>
+            <td>{`bdr.r_color_${key}`}</td>
+            <td>
+              <code>{`{ borderRightColor: '${value}' }`}</code>
+            </td>
+            <td>
+              <div
+                style={{
+                  width: "20px",
+                  border: `1px solid #606770`,
+                  margin: "auto",
+                  height: "20px",
+                  backgroundColor: `${value}`,
+                }}
+              ></div>
+            </td>
+          </tr>
+          <tr>
+            <td>{`bdr.t_color_${key}`}</td>
+            <td>
+              <code>{`{ borderTopColor: '${value}' }`}</code>
+            </td>
+            <td>
+              <div
+                style={{
+                  width: "20px",
+                  border: `1px solid #606770`,
+                  margin: "auto",
+                  height: "20px",
+                  backgroundColor: `${value}`,
+                }}
+              ></div>
+            </td>
+          </tr>
+          <tr>
+            <td>{`bdr.s_color_${key}`}</td>
+            <td>
+              <code>{`{ borderStartColor: '${value}' }`}</code>
+            </td>
+            <td>
+              <div
+                style={{
+                  width: "20px",
+                  border: `1px solid #606770`,
+                  margin: "auto",
+                  height: "20px",
+                  backgroundColor: `${value}`,
+                }}
+              ></div>
+            </td>
+          </tr>
+          <tr>
+            <td>{`bdr.e_color_${key}`}</td>
+            <td>
+              <code>{`{ borderEndColor: '${value}' }`}</code>
+            </td>
+            <td>
+              <div
+                style={{
+                  width: "20px",
+                  border: `1px solid #606770`,
+                  margin: "auto",
+                  height: "20px",
+                  backgroundColor: `${value}`,
+                }}
+              ></div>
+            </td>
+          </tr>
         </React.Fragment>
       ))}
     </tbody>
@@ -61,6 +163,12 @@ Custom properties are usually rendered using `_(customValue)`
 | Object                   | Native Properties              |
 | ------------------------ | ------------------------------ |
 | bdr.color_(customColor) | `{ borderColor: customColor }` |
+| bdr.b_color_(customColor) | `{ borderBottomColor: customColor }` |
+| bdr.l_color_(customColor) | `{ borderLeftColor: customColor }` |
+| bdr.r_color_(customColor) | `{ borderRightColor: customColor }` |
+| bdr.t_color_(customColor) | `{ borderTopColor: customColor }` |
+| bdr.s_color_(customColor) | `{ borderStartColor: customColor }` |
+| bdr.e_color_(customColor) | `{ borderEndColor: customColor }` |
 
 ## Colors
 

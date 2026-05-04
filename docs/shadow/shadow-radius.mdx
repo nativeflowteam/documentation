@@ -6,8 +6,6 @@ slug: /shadow-radius
 sidebar_position: 2
 ---
 
-import React from "react";
-
 Define the blur radius of the shadow.
 >★ represents it's an iOS-only prop
 
@@ -19,28 +17,18 @@ import { shadow } from "nativeflowcss";
 
 ## Properties
 
-<div class="scrollable-box">
-  <table>
-    <thead>
-      <tr>
-        <th>Object</th>
-        <th>Native Properties</th>
-      </tr>
-    </thead>
-    <tbody>
-      {[...Array(25).keys()].map((i) => (
-        <React.Fragment key={i + 1}>
-          <tr>
-            <td>{`shadow.rounded_${i}`}</td>
-            <td>
-              <code>{`{ shadowRadius: ${i} }`}</code>
-            </td>
-          </tr>
-        </React.Fragment>
-      ))}
-    </tbody>
-  </table>
-</div>
+| Object             | Native Properties         |
+| ------------------ | ------------------------- |
+| shadow.rounded_none | `{ shadowRadius: 0 }`    |
+| shadow.rounded_xs   | `{ shadowRadius: 1 }`    |
+| shadow.rounded_sm   | `{ shadowRadius: 2 }`    |
+| shadow.rounded_md   | `{ shadowRadius: 3 }`    |
+| shadow.rounded_base | `{ shadowRadius: 4 }`    |
+| shadow.rounded_lg   | `{ shadowRadius: 8 }`    |
+| shadow.rounded_xl   | `{ shadowRadius: 12 }`   |
+| shadow.rounded_2xl  | `{ shadowRadius: 16 }`   |
+| shadow.rounded_3xl  | `{ shadowRadius: 24 }`   |
+| shadow.rounded_full | `{ shadowRadius: 9999 }` |
 
 ## Custom Shadow Opacity
 

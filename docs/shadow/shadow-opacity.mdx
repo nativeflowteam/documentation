@@ -28,12 +28,12 @@ import { shadow } from "nativeflowcss";
       </tr>
     </thead>
     <tbody>
-      {[...Array(25).keys()].map((i) => (
+      {[...Array(24).keys()].map((i) => (
         <React.Fragment key={i + 1}>
           <tr>
-            <td>{`shadow.opacity_${i}`}</td>
+            <td>{`shadow.opacity_${i + 1}`}</td>
             <td>
-              <code>{`{ shadowOpacity: ${i} }`}</code>
+              <code>{`{ shadowOpacity: ${i + 1} }`}</code>
             </td>
           </tr>
         </React.Fragment>
