@@ -21,3 +21,20 @@
   align-items: center;
   justify-content: center;
 }
+
+.titleWithLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.titleLogo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.titleText {
+  margin-bottom: 0;
+}
