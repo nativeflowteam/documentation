@@ -6,6 +6,7 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "postbuild": "node scripts/sync-llms-to-static.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -27,7 +28,8 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.5.2",
-    "@docusaurus/types": "3.5.2"
+    "@docusaurus/types": "3.5.2",
+    "docusaurus-plugin-llms": "^0.4.0"
   },
   "browserslist": {
     "production": [

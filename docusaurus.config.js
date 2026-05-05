@@ -37,6 +37,43 @@ const config = {
     locales: ["en"],
   },
 
+  plugins: [
+    [
+      "docusaurus-plugin-llms",
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        docsDir: "docs",
+        title: "NativeFlow",
+        description:
+          "Utility style-objects for React Native — switch from Tailwind on web to NativeFlow on app with zero extra setup.",
+        includeBlog: false,
+        excludeImports: true,
+        removeDuplicateHeadings: true,
+        includeOrder: [
+          "intro.mdx",
+          "getting-started/*",
+          "core-concepts/*",
+          "layout/*",
+          "flexbox/*",
+          "spacing/*",
+          "sizing/*",
+          "typography/*",
+          "border/*",
+          "shadow/*",
+          "effects/*",
+        ],
+        includeUnmatchedLast: true,
+        pathTransformation: {
+          ignorePaths: ["docs"],
+        },
+        rootContent:
+          "NativeFlow is a zero-dependency utility style-object library for React Native. " +
+          "Naming mirrors Tailwind to keep the learning curve flat. Symbols: * = Android-only, ★ = iOS-only.",
+      },
+    ],
+  ],
+
   presets: [
     [
       "classic",
