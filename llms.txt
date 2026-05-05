@@ -1,0 +1,78 @@
+# NativeFlow
+
+> Utility style-objects for React Native — switch from Tailwind on web to NativeFlow on app with zero extra setup.
+
+NativeFlow is a zero-dependency utility style-object library for React Native. Naming mirrors Tailwind to keep the learning curve flat. Symbols: * = Android-only, ★ = iOS-only.
+
+## Table of Contents
+
+- [👋 Introduction](https://nativeflow.js.org/docs/intro.md)
+- [Editor Setup](https://nativeflow.js.org/getting-started/editor-setup.md): Set up the NativeFlow CodeSense extension in VS Code.
+- [Installations](https://nativeflow.js.org/getting-started/installations.md): **Let's get working with NativeFlow, staying close to React-Native Fundamentals with concise syntax.**
+- [Syntax Difference](https://nativeflow.js.org/getting-started/syntax-difference.md): How is NativeFlow different from Tailwind (syntax-wise)
+- [Custom Styles](https://nativeflow.js.org/core-concepts/custom-styles.md): How to input your desired values for various utility style-objects.
+- [Destructured Approach](https://nativeflow.js.org/core-concepts/destructured-approach.md): Reusing a stylesheet made using NativeFlow utility objects
+- [Flex vs Grow vs Shrink vs Basis](https://nativeflow.js.org/core-concepts/flex-vs-grow-vs-shrink-vs-basis.md): Control how elements expand to fill available space.
+- [Utility-First Fundamentals](https://nativeflow.js.org/core-concepts/utility-first-fundamentals.md): How the syntax system works, what flaws the other approach has that NativeFlow fixes
+- [Aspect Ratio](https://nativeflow.js.org/layout/aspect-ratio.md): Control width-to-height proportions of elements.
+- [Direction](https://nativeflow.js.org/layout/direction.md): Set writing direction for layout flow.
+- [Display](https://nativeflow.js.org/layout/display.md): Set element display properties like hidden, flex.
+- [Object Fit](https://nativeflow.js.org/layout/object-fit.md): Define how content/images fits within containers.
+- [Overflow](https://nativeflow.js.org/layout/overflow.md): Control the visibility of content that overflows the boundaries of its container.
+- [Position](https://nativeflow.js.org/layout/position.md): Set absolute or relative positioning for elements.
+- [Top / Right / Bottom / Left](https://nativeflow.js.org/layout/top-right-bottom-left.md): Control element offsets from any side.
+- [Z-Index](https://nativeflow.js.org/layout/z-index.md): Manage stacking order of overlapping elements.
+- [Align Content](https://nativeflow.js.org/flexbox/align-content.md): Distribute space among flex lines when wrapping.
+- [Align Items](https://nativeflow.js.org/flexbox/align-items.md): Align flex items along the cross axis.
+- [Align Self](https://nativeflow.js.org/flexbox/align-self.md): Override alignment for individual flex items.
+- [Flex Basis](https://nativeflow.js.org/flexbox/flex-basis.md): Set initial size before elements grow or shrink.
+- [Flex Direction](https://nativeflow.js.org/flexbox/flex-direction.md): Define the direction of flex container items.
+- [Flex Grow](https://nativeflow.js.org/flexbox/flex-grow.md): Control how elements expand to fill available space.
+- [Flex Shrink](https://nativeflow.js.org/flexbox/flex-shrink.md): Adjust how elements shrink when space is limited.
+- [Flex Wrap](https://nativeflow.js.org/flexbox/flex-wrap.md): Define the Wrap of flex container items.
+- [Flex](https://nativeflow.js.org/flexbox/flex.md): Define how flex subdivides for elements.
+- [Gap](https://nativeflow.js.org/flexbox/gap.md): Manage spacing between flex items.
+- [Justify Content](https://nativeflow.js.org/flexbox/justify-content.md): Distribute space and align items along the main axis.
+- [Justify Self ❔](https://nativeflow.js.org/flexbox/justify-self.md): Custom alignment for individual items (Native workaround for the CSS equivalent).
+- [Place Items](https://nativeflow.js.org/flexbox/place-items.md): Align and justify items within a container.
+- [Margin](https://nativeflow.js.org/spacing/margin.md): Spacing outside element's border.
+- [Padding](https://nativeflow.js.org/spacing/padding.md): Spacing inside element's border.
+- [Height](https://nativeflow.js.org/sizing/height.md): Control the height of elements.
+- [Max Height](https://nativeflow.js.org/sizing/max-height.md): Limit the maximum height of elements.
+- [Max Width](https://nativeflow.js.org/sizing/max-width.md): Limit the maximum width of elements.
+- [Min Height](https://nativeflow.js.org/sizing/min-height.md): Define the minimum height an element can have.
+- [Min Width](https://nativeflow.js.org/sizing/min-wdith.md): Define the minimum width an element can have.
+- [Size](https://nativeflow.js.org/sizing/size.md): Create square-shaped elements with equal width and height.
+- [Width](https://nativeflow.js.org/sizing/width.md): Control the width of elements.
+- [Font Family](https://nativeflow.js.org/typography/font-family.md): Define the font family for text.
+- [Font Size](https://nativeflow.js.org/typography/font-size.md): Adjust the size of the text.
+- [Font Style](https://nativeflow.js.org/typography/font-style.md): Set text to normal or italic styles.
+- [Font Weight](https://nativeflow.js.org/typography/font-weight.md): Control the thickness or boldness of text.
+- [Letter Spacing](https://nativeflow.js.org/typography/letter-spacing.md): Adjust spacing between characters in text.
+- [Text Align](https://nativeflow.js.org/typography/text-align.md): Align text horizontally within its container.
+- [Text Color](https://nativeflow.js.org/typography/text-color.md): Set the color of text.
+- [Text Decoration Color](https://nativeflow.js.org/typography/text-decoration-color.md): Set the color of text decorations.
+- [Text Decoration Lines](https://nativeflow.js.org/typography/text-decoration-lines.md): Apply underlines, overlines, or strikethroughs.
+- [Text Decoration Style ★](https://nativeflow.js.org/typography/text-decoration-style.md): Define the style of text decorations, like solid or dotted.
+- [Text Shadow Color ★](https://nativeflow.js.org/typography/text-shadow-color.md): Set the color of the text shadow.
+- [Text Shadow Offset](https://nativeflow.js.org/typography/text-shadow-offset.md): Adjust the horizontal and vertical position of the text shadow.
+- [Text Shadow Radius](https://nativeflow.js.org/typography/text-shadow-radius.md): Define the blur radius of the text shadow.
+- [Text Transforms](https://nativeflow.js.org/typography/text-transforms.md): Change text case to uppercase, lowercase, or capitalize.
+- [Text Variants](https://nativeflow.js.org/typography/text-variants.md): Control typographic variants like small-caps or numbers.
+- [User Select](https://nativeflow.js.org/typography/user-select.md): Control the user selection behavior of text.
+- [Border Color](https://nativeflow.js.org/border/border-color.md): Apply colors to element borders.
+- [Border Radius](https://nativeflow.js.org/border/border-radius.md): Set rounded corners with customizable radii.
+- [Border Style](https://nativeflow.js.org/border/border-style.md): Define border styles like solid, dashed, or dotted.
+- [Border Width](https://nativeflow.js.org/border/border-width.md): Control the thickness of element borders.
+- [Shadow Color](https://nativeflow.js.org/shadow/shadow-color.md): Set the color of the shadow.
+- [Shadow Offset ★](https://nativeflow.js.org/shadow/shadow-offset.md): Adjust the horizontal and vertical position of the shadow.
+- [Shadow Opacity ★](https://nativeflow.js.org/shadow/shadow-opacity.md): Control the transparency of the shadow.
+- [Shadow Radius ★](https://nativeflow.js.org/shadow/shadow-radius.md): Define the blur radius of the shadow.
+- [Backface Visibility](https://nativeflow.js.org/effects/backface-visibility.md): Control whether the back face of a view is visible.
+- [Background Color](https://nativeflow.js.org/effects/background-color.md): Apply background colors to elements.
+- [Elevation ✱](https://nativeflow.js.org/effects/elevation.md): Control shadow depth to create elevation effects.
+- [Opacity](https://nativeflow.js.org/effects/opacity.md): Adjust the transparency of elements.
+- [Overlay ✱](https://nativeflow.js.org/effects/overlay.md): Add overlay color on top of non-transparent pixels.
+- [Pointer Events](https://nativeflow.js.org/effects/pointer-events.md): Control whether a view receives touch events.
+- [Tint Color](https://nativeflow.js.org/effects/tint-color.md): Modify the color of images and icons.
+- [⚡ Flash Setup](https://nativeflow.js.org/docs/flash-setup.md): Spacing inside element's border.
